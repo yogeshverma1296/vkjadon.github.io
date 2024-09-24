@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- meta tags -->
+    <title>ROS (Robot Operating System) Course - Dr. Vijay Kumar Jadon</title>
+    <meta
+      name="title"
+      content="ROS (Robot Operating System) Course - Dr. Vijay Kumar Jadon"
+    />
+    <meta
+      name="description"
+      content="ROS is a meta (after or beyond) operating system that runs on the existing operating system. It provides a set of tools, libraries, and conventions that make it easier to develop, test, and deploy robot systems."
+    />
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../css/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="../css/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../css/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../css/tabs.css" />
+    <link rel="shortcut icon" href="../img/ROS.png" />
+    <script src="../js/jquery.js"></script>
+    <script src="../js/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../js/documentation_options.js"></script>
+    <script src="../js/doctools.js"></script>
+    <script src="../js/sphinx_highlight.js"></script>
+    <script src="../js/clipboard.min.js"></script>
+    <script src="../js/copybutton.js"></script>
+    <script src="../js/theme.js"></script>
+    <!-- For Syntax highlighting -->
+    <!-- Prism.js -->
+    <link rel="stylesheet" href="../prism/prism.css">
+    <script src="../prism/prism.js"></script>
+    <style>
+      .copy-btn {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background: #f5f5f5;
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+      }
+
+      pre {
+        position: relative;
+      }
+    </style>
+  </head>
+
+  <body class="wy-body-for-nav">
+    <div class="wy-grid-for-nav">
+      <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+        <div class="wy-side-scroll">
+          <div class="wy-side-nav-search">
+            <a href="/index.html" class="icon icon-home">
+              ROS (Robot Operating System) - Dr. Vijay Kumar Jadon
+              <img
+                src="../img/ROS.png"
+                class="logo"
+                alt="Dr. Vijay Kumar Jadon ROS Logo"
+              />
+            </a>
+          </div>
+          <div
+            class="wy-menu wy-menu-vertical"
+            data-spy="affix"
+            role="navigation"
+            aria-label="Navigation menu"
+          >
+            <ul class="current">
+              <!-- Introduction -->
+              <li class="toctree-l1">
+                <a class="reference internal" href="introduction.html"
+                  >Introduction</a
+                >
+                <ul>
+                  <!-- Robots -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="introduction.html#Robots"
+                      >Robots</a
+                    >
+                    <ul>
+                      <!-- Characteristics of Robots -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#CharacteristicsofRobots"
+                          >Characteristics of Robots</a
+                        >
+                      </li>
+                      <!-- Major Components of Robot -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#MajorComponentsofRobot"
+                          >Major Components of Robot</a
+                        >
+                      </li>
+                      <!-- Multidisciplinary Knowledge -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#MultidisciplinaryKnowledge"
+                          >Multidisciplinary Knowledge</a
+                        >
+                      </li>
+                      <!-- Autonomous Robots -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#AutonomousRobots"
+                          >Autonomous Robots</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- Why ROS -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="introduction.html#WhyROS"
+                      >ROS</a
+                    >
+                    <ul>
+                      <!-- Why ROS -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#WhyROS"
+                          >Why ROS</a
+                        >
+                      </li>
+                      <!-- Robot Operating System -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#RobotOperatingSystem"
+                          >Robot Operating System</a
+                        >
+                      </li>
+                      <!-- Robot Integration Capabilities -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#RobotIntegrationCapabilities"
+                          >Robot Integration Capabilities</a
+                        >
+                      </li>
+                      <!-- Currently Supported Distributions -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#CurrentlySupportedDistributions"
+                          >Currently Supported Distributions</a
+                        >
+                      </li>
+                      <!-- About ROS Features -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#AboutROSFeatures"
+                          >About ROS Features</a
+                        >
+                      </li>
+                      <!-- ROS Applications -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#ROSApplications"
+                          >ROS Applications</a
+                        >
+                      </li>
+                      <!-- ROS2 Concepts, Tools and Technologies -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#ROS2ConceptsToolsandTechnologies"
+                          >ROS2 Concepts, Tools and Technologies</a
+                        >
+                      </li>
+                      <!-- Current Distributions -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#CurrentDistributions"
+                          >Current Distributions</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Installation -->
+              <li class="toctree-l1">
+                <a class="reference internal" href="installation.html"
+                  >Installation</a
+                >
+                <ul>
+                  <!-- Installation Guide -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#DocsInstallationGuide"
+                      >Installation Guide</a
+                    >
+                    <!-- Docs : Installation Guide -->
+                  </li>
+
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#DocsInstallationGuide"
+                      >Docs : Installation Guide</a
+                    >
+                  </li>
+                  <!-- Ubuntu -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#Ubuntu"
+                      >Ubuntu</a
+                    >
+                  </li>
+                  <!-- Download -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#Download"
+                      >Download</a
+                    >
+                  </li>
+                  <!-- Bootable Drive -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#BootableDrive"
+                      >Bootable Drive</a
+                    >
+                  </li>
+                  <!-- Creating Virtual Machine -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#CreatingVirtualMachine"
+                      >Creating Virtual Machine</a
+                    >
+                  </li>
+                  <!-- Command : sudo -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#Commandsudo"
+                      >Command : sudo</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+
+              <!-- Linux -->
+              <li class="toctree-l1">
+                <a class="reference internal" href="linux.html">Linux</a>
+                <ul>
+                  <!-- Terminal Commands -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="linux.html#TerminalCommands"
+                      >Terminal Commands</a
+                    >
+                    
+                      <!-- Terminal/Shell/Bash -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#TerminalShellBash"
+                          >Terminal/Shell/Bash</a
+                        >
+                      </li>
+                      <!-- Syntax of Shell Command -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#SyntaxofShellCommand"
+                          >Syntax of Shell Command</a
+                        >
+                      </li>
+                      <!-- TerminalC -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#TerminalC"
+                          >Terminal Commands</a
+                        >
+                      </li>
+
+                      <!-- Skill Task -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#SkillTask"
+                          >Skill Task</a
+                        >
+                      </li>
+                      
+                      <!-- Copy (cp) Command -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#CopyCommand"
+                          >Copy (cp) Command</a
+                        >
+                      </li>
+
+                      <!-- Skill Task -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#SkillTask2"
+                          >Skill Task</a
+                        >
+                      </li>
+
+                      <!-- Move (mv) and Remove (rm) Commands -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#MoveRemoveCommands"
+                          >Move (mv) and Remove (rm) Commands</a
+                        >
+                      </li>
+
+                      <!-- Change Mode : chmod -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#chmod"
+                          >Change Mode : chmod</a
+                        >
+                      </li>
+
+                      <!-- Redirection Operators (> and >>) -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#RedirectionOperators"
+                          >Redirection Operators (> and >>)</a
+                        >
+                      </li>
+
+                      <!-- Terminal Commands -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#TerminalCommands4"
+                          >Terminal Commands</a
+                        >
+                      </li>
+
+                      <!-- Command : pipe (|), grep, printenv, &&, || -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#Commandpipegrepprintenv"
+                          >Command : pipe (|), grep, printenv, &&, ||</a
+                        >
+                      </li>
+
+                      <!-- Command -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#Command"
+                          >Command</a
+                        >
+                      </li>
+
+                      <!-- Virtual Environment -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#VirtualEnvironment"
+                          >Virtual Environment</a
+                        >
+                      </li>
+
+                      <!-- Quoting -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#Quoting"
+                          >Quoting</a
+                        >
+                      </li>
+
+                      <!-- Secure Shell (ssh) -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#SecureShell"
+                          >Secure Shell (ssh)</a
+                        >
+                      </li>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Right Section -->
+      <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+        <nav class="wy-nav-top" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="/index.html">Dr. Vijay Kumar Jadon</a>
+        </nav>
+
+        <div class="wy-nav-content">
+          <div class="rst-content">
+            <div role="navigation" aria-label="Page navigation">
+              <ul class="wy-breadcrumbs">
+                <li>
+                  <a
+                    href="/index.html"
+                    class="icon icon-home"
+                    aria-label="Home"
+                  ></a>
+                </li>
+                <li class="breadcrumb-item active">
+                  ROS (Robot Operating System) Course - Dr. Vijay Kumar Jadon
+                </li>
+                <li class="wy-breadcrumbs-aside">
+                  <a
+                    href="https://github.com/vkjadon"
+                    class="fa fa-github"
+                    target="_blank"
+                  >
+                    GitHub</a
+                  >
+                </li>
+              </ul>
+              <hr />
+            </div>
+            <div
+              role="main"
+              class="document"
+              itemscope="itemscope"
+              itemtype="http://schema.org/Article"
+            >
+              <div itemprop="articleBody">
+                <section id="ROSCourse">
+                  <span id="id1"></span>
+                  <h1>
+                    ROS (Robot Operating System) Course<a
+                      class="headerlink"
+                      href="#ROSCourse"
+                      title="Link to this heading"
+                      ></a
+                    >
+                  </h1>
+                  <img
+                    src="../img/ROS2.png"
+                    alt="ROS (Robot Operating System)"
+                  />
+                  <!-- Docs : Installation Guide -->
+                  <section id="DocsInstallationGuide">
+                    <h2>
+                      Docs : Installation Guide<a
+                        class="headerlink"
+                        href="#DocsInstallationGuide"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h2>
+                    <img
+                      src="../img/DocsInstallationGuide.png"
+                      alt="DocsInstallationGuide"
+                    />
+                    <p>
+                      <a href="https://docs.ros.org/en/humble/Installation.html"
+                        >https://docs.ros.org/en/humble/Installation.html</a
+                      >
+                    </p>
+                  </section>
+                  <!-- Ubuntu -->
+                  <section id="Ubuntu">
+                    <h2>
+                      Ubuntu<a
+                        class="headerlink"
+                        href="#Ubuntu"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h2>
+                    <img src="../img/Ubuntu.jpg" alt="Ubuntu" />
+                    <p>
+                      Ubuntu is a popular distribution (or "distro") of Linux
+                    </p>
+                    <p>
+                      Ubuntu is based on the GNU/Linux OS and combines the Linux
+                      kernel with a set of GNU utilities and libraries.
+                    </p>
+                    <p>
+                      The Linux kernel is responsible for managing hardware,
+                      running processes, and handling system resources.
+                    </p>
+                    <p>
+                      Ubuntu is built on the Debian distribution of Linux.
+                      Debian was first announced by Ian Murdock in 1993.
+                    </p>
+                    <p>
+                      Ubuntu takes the core components of Debian and adds its
+                      own enhancements, software, and user interface
+                      improvements.
+                    </p>
+                    <p>Ubuntu is developed and maintained by Canonical Ltd.</p>
+                    <p>
+                      Ubuntu is open source and has a large and active
+                      community.
+                    </p>
+                  </section>
+                  <!-- Download -->
+                  <section id="Download">
+                    <h2>
+                      Download<a
+                        class="headerlink"
+                        href="#Download"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h2>
+                    <img src="../img/Download.png" alt="Download" />
+                    <p>
+                      <a href="https://releases.ubuntu.com/"
+                        >https://releases.ubuntu.com/</a
+                      >
+                    </p>
+                    <img src="../img/Download2.png" alt="Download2" />
+                    <p>
+                      <a
+                        href="https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview"
+                        >https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview</a
+                      >
+                    </p>
+                    <img src="../img/Download3.png" alt="Download3" />
+                  </section>
+                  <!-- Bootable Drive -->
+                  <section id="BootableDrive">
+                    <h2>
+                      Bootable Drive<a
+                        class="headerlink"
+                        href="#BootableDrive"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h2>
+                    <img src="../img/BootableDrive.png" alt="BootableDrive" />
+                    <img src="../img/BootableDrive2.png" alt="BootableDrive2" />
+                    <img src="../img/BootableDrive3.png" alt="BootableDrive3" />
+                    <img src="../img/BootableDrive4.png" alt="BootableDrive4" />
+                    <img src="../img/BootableDrive5.png" alt="BootableDrive5" />
+                    <img src="../img/BootableDrive6.png" alt="BootableDrive6" />
+                  </section>
+                  <!-- Creating Virtual Machine -->
+                  <section id="CreatingVirtualMachine">
+                    <h2>
+                      Creating Virtual Machine<a
+                        class="headerlink"
+                        href="#CreatingVirtualMachine"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h2>
+                    <img
+                      src="../img/CreatingVirtualMachine.jpg"
+                      alt="CreatingVirtualMachine"
+                    />
+                    <p>
+                      <a href="https://www.virtualbox.org/"
+                        >https://www.virtualbox.org/</a
+                      >
+                    </p>
+                    <img src="../img/virtualbox.png" alt="virtualbox" />
+                    <img
+                      src="../img/CreatingVirtualMachine2.png"
+                      alt="CreatingVirtualMachine"
+                    />
+                    <img
+                      src="../img/CreatingVirtualMachine3.png"
+                      alt="CreatingVirtualMachine"
+                    />
+                    <p>
+                      <strong>Name:</strong> Assign an informative name that
+                      describes the OS and software running on the VM. For
+                      example, a name such as "Ubuntu22.04-ROS".
+                    </p>
+                    <p>
+                      <strong>Folder:</strong> The location where VMs are stored
+                      on your computer, called the <em>machine folder</em>.
+                    </p>
+                    <p>
+                      <strong>ISO Image:</strong> Select an ISO image file. The
+                      image file should be downloaded before creating New VM.
+                    </p>
+                    <p>
+                      <strong>Type and Version:</strong> These fields are used
+                      to select the OS that you want to install on the new
+                      virtual machine.
+                    </p>
+                    <p>
+                      If an ISO image is selected and Oracle VM VirtualBox
+                      detects the operating system for the ISO, the
+                      <strong>Type</strong> and <strong>Version</strong> fields
+                      are populated automatically and are disabled.
+                    </p>
+                    <img
+                      src="../img/CreatingVirtualMachine4.png"
+                      alt="CreatingVirtualMachine4"
+                    />
+                    <p>
+                      <strong>Base Memory:</strong> The amount of memory
+                      selected here will be taken away from your host machine.
+                    </p>
+                    <p>
+                      The memory you give to the VM will not be available to
+                      your host OS while the VM is running.
+                    </p>
+                    <p>
+                      You can change this setting later, after you have created
+                      the VM.
+                    </p>
+                    <p>
+                      <strong>Processor(s):</strong> Select the number of
+                      virtual processors to assign to the VM.
+                    </p>
+                    <img
+                      src="../img/CreatingVirtualMachine5.png"
+                      alt="CreatingVirtualMachine5"
+                    />
+                    <p>
+                      <strong>Disk Size:</strong> maximum size for the hard disk
+                      in the new VM
+                    </p>
+                    <p>
+                      <strong>Pre-Allocate Full Size:</strong> Select to opt a
+                      fixed-size file for the disk image. Deselect to opt a
+                      <em>dynamically allocated file</em> for the disk image.
+                    </p>
+                    <p>
+                      <strong>Dynamically allocated file:</strong> Image file
+                      only grows when we store data on its virtual hard disk.
+                      So, it is initially small and grows with as per use.
+                    </p>
+                    <p>
+                      <strong>Fixed-size file:</strong> This type of image file
+                      immediately occupies the file specified. While occupying
+                      much more space, it is slightly faster than a dynamically
+                      allocated file.
+                    </p>
+                    <img
+                      src="../img/CreatingVirtualMachine6.png"
+                      alt="CreatingVirtualMachine6"
+                    />
+                    <img
+                      src="../img/CreatingVirtualMachine7.png"
+                      alt="CreatingVirtualMachine7"
+                    />
+                    <p>
+                      <strong>Save the machine state:</strong> VirtualBox
+                      <em>freezes</em> the virtual machine by completely saving
+                      its state to your local disk. All the programs are open
+                      and resumes operation once restarted.
+                    </p>
+                    <p>
+                      <strong>Send the shutdown signal:</strong> This has the
+                      same effect as of pressing the power button on a computer.
+                      This will trigger a shutdown mechanism from within the VM.
+                    </p>
+                    <p>
+                      <strong>Power off the machine:</strong> With this option,
+                      Oracle VM VirtualBox also stops running the virtual
+                      machine, but <em>without</em> saving its state.
+                    </p>
+                  </section>
+                  <!-- Command : sudo -->
+                  <section id="Commandsudo">
+                    <h2>
+                      Command : sudo<a
+                        class="headerlink"
+                        href="#Commandsudo"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h2>
+                    <p>
+                      The <em><span style="color: blue">sudo</span></em> command
+                      in Linux and other Unix-like operating systems stands for
+                      "superuser do."
+                    </p>
+                    <pre class="language-bash"><code>sudo apt update</code></pre>
+                    <pre class="language-bash"><code>sudo apt upgrade</code></pre>
+                    <pre class="language-bash"><code>sudo apt install build-essential gcc make perl dkms</code></pre>
+                    <p>
+                      <strong>build-essential:</strong> This package includes a
+                      collection of tools for building software.
+                    </p>
+                    <p>
+                      <strong>gcc:</strong> The GNU Compiler Collection
+                      supporting various programming languages.
+                    </p>
+                    <p>
+                      <strong>make:</strong> A build automation tool that
+                      automatically builds executable programs and libraries
+                      from source code by reading files called Makefiles.
+                    </p>
+                    <p>
+                      <strong>perl:</strong> A high-level, general-purpose,
+                      interpreted programming language often used for system
+                      administration, web development, and network programming.
+                    </p>
+                    <p>
+                      <strong>dkms:</strong> Dynamic Kernel Module Support, a
+                      framework that allows kernel modules to be dynamically
+                      built for each kernel version installed on a system.
+                    </p>
+                    <img src="../img/UbuntuDebian.png" alt="Ubuntu (Debian)" />
+                    <img src="../img/Setupsources.png" alt="Setup Sources" />
+                    <img
+                      src="../img/InstallROS2Packages.png"
+                      alt="Install ROS2 Packages"
+                    />
+                    <p>
+                      <img
+                        src="../img/DesktopInstall.png"
+                        alt="Desktop Install"
+                      />
+                    </p>
+                  </section>
+                  <!-- Thank You -->
+                  <p>Thank You. End of Installation of ROS</p>
+                </section>
+              </div>
+            </div>
+            <footer>
+              <div
+                class="rst-footer-buttons"
+                role="navigation"
+                aria-label="Footer"
+              >
+                <a
+                  href="introduction.html"
+                  class="btn btn-neutral float-left"
+                  title="Introduction of ROS"
+                  accesskey="p"
+                  rel="prev"
+                  ><span
+                    class="fa fa-arrow-circle-left"
+                    aria-hidden="true"
+                  ></span>
+                  Previous</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-neutral float-right"
+                  title="Beginner: CLI tools"
+                  accesskey="n"
+                  rel="next"
+                  >Next
+                  <span
+                    class="fa fa-arrow-circle-right"
+                    aria-hidden="true"
+                  ></span
+                ></a>
+              </div>
+
+              <hr />
+
+              <div role="contentinfo">
+                <p>Copyright &#169; 2024, Dr. Vijay Kumar Jadon</p>
+                <p>
+                  <a href="https://yogeshverma.info/" target="_blank"
+                    >Developed by Yogesh Verma</a
+                  >
+                </p>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      jQuery(function () {
+        SphinxRtdTheme.Navigation.enable(true);
+      });
+    </script>
+    <!-- for highlighting text -->
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        new ClipboardJS(".copy-btn");
+        document.querySelectorAll(".copy-btn").forEach((button) => {
+          button.addEventListener("click", () => {
+            button.textContent = "Copied!";
+            setTimeout(() => {
+              button.textContent = "Copy";
+            }, 2000);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

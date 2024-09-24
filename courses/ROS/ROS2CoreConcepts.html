@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- meta tags -->
+    <title>ROS (Robot Operating System) Course - Dr. Vijay Kumar Jadon</title>
+    <meta
+      name="title"
+      content="ROS (Robot Operating System) Course - Dr. Vijay Kumar Jadon"
+    />
+    <meta
+      name="description"
+      content="ROS is a meta (after or beyond) operating system that runs on the existing operating system. It provides a set of tools, libraries, and conventions that make it easier to develop, test, and deploy robot systems."
+    />
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../css/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="../css/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../css/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../css/tabs.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="shortcut icon" href="../img/ROS.png" />
+    <script src="../js/jquery.js"></script>
+    <script src="../js/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../js/documentation_options.js"></script>
+    <script src="../js/doctools.js"></script>
+    <script src="../js/sphinx_highlight.js"></script>
+    <script src="../js/clipboard.min.js"></script>
+    <script src="../js/copybutton.js"></script>
+    <script src="../js/theme.js"></script>
+    <!-- For Syntax highlighting -->
+    <!-- Prism.js -->
+    <link rel="stylesheet" href="../prism/prism.css" />
+    <script async src="../prism/prism.js"></script>
+    <!-- Clipboard.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+  </head>
+
+  <body class="wy-body-for-nav">
+    <div class="wy-grid-for-nav">
+      <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+        <div class="wy-side-scroll">
+          <div class="wy-side-nav-search">
+            <a href="/index.html" class="icon icon-home">
+              ROS (Robot Operating System) - Dr. Vijay Kumar Jadon
+              <img
+                src="../img/ROS.png"
+                class="logo"
+                alt="Dr. Vijay Kumar Jadon ROS Logo"
+              />
+            </a>
+          </div>
+          <div
+            class="wy-menu wy-menu-vertical"
+            data-spy="affix"
+            role="navigation"
+            aria-label="Navigation menu"
+          >
+            <ul class="current">
+              <!-- Introduction -->
+              <li class="toctree-l1">
+                <a class="reference internal" href="introduction.html"
+                  >Introduction</a
+                >
+                <ul>
+                  <!-- Robots -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="introduction.html#Robots"
+                      >Robots</a
+                    >
+                    <ul>
+                      <!-- Characteristics of Robots -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#CharacteristicsofRobots"
+                          >Characteristics of Robots</a
+                        >
+                      </li>
+                      <!-- Major Components of Robot -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#MajorComponentsofRobot"
+                          >Major Components of Robot</a
+                        >
+                      </li>
+                      <!-- Multidisciplinary Knowledge -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#MultidisciplinaryKnowledge"
+                          >Multidisciplinary Knowledge</a
+                        >
+                      </li>
+                      <!-- Autonomous Robots -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#AutonomousRobots"
+                          >Autonomous Robots</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- Why ROS -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="introduction.html#WhyROS"
+                      >ROS</a
+                    >
+                    <ul>
+                      <!-- Why ROS -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#WhyROS"
+                          >Why ROS</a
+                        >
+                      </li>
+                      <!-- Robot Operating System -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#RobotOperatingSystem"
+                          >Robot Operating System</a
+                        >
+                      </li>
+                      <!-- Robot Integration Capabilities -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#RobotIntegrationCapabilities"
+                          >Robot Integration Capabilities</a
+                        >
+                      </li>
+                      <!-- Currently Supported Distributions -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#CurrentlySupportedDistributions"
+                          >Currently Supported Distributions</a
+                        >
+                      </li>
+                      <!-- About ROS Features -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#AboutROSFeatures"
+                          >About ROS Features</a
+                        >
+                      </li>
+                      <!-- ROS Applications -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#ROSApplications"
+                          >ROS Applications</a
+                        >
+                      </li>
+                      <!-- ROS2 Concepts, Tools and Technologies -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#ROS2ConceptsToolsandTechnologies"
+                          >ROS2 Concepts, Tools and Technologies</a
+                        >
+                      </li>
+                      <!-- Current Distributions -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#CurrentDistributions"
+                          >Current Distributions</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Installation -->
+              <li class="toctree-l1">
+                <a class="reference internal" href="installation.html"
+                  >Installation</a
+                >
+                <ul>
+                  <!-- Installation Guide -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#DocsInstallationGuide"
+                      >Installation Guide</a
+                    >
+                    <!-- Docs : Installation Guide -->
+                  </li>
+
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#DocsInstallationGuide"
+                      >Docs : Installation Guide</a
+                    >
+                  </li>
+                  <!-- Ubuntu -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#Ubuntu"
+                      >Ubuntu</a
+                    >
+                  </li>
+                  <!-- Download -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#Download"
+                      >Download</a
+                    >
+                  </li>
+                  <!-- Bootable Drive -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#BootableDrive"
+                      >Bootable Drive</a
+                    >
+                  </li>
+                  <!-- Creating Virtual Machine -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#CreatingVirtualMachine"
+                      >Creating Virtual Machine</a
+                    >
+                  </li>
+                  <!-- Command : sudo -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#Commandsudo"
+                      >Command : sudo</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Linux -->
+              <li class="toctree-l1">
+                <a class="reference internal" href="linux.html">Linux</a>
+                <ul>
+                  <!-- Terminal Commands -->
+                  < class="toctree-l2">
+                  <a
+                    class="reference internal"
+                    href="linux.html#TerminalCommands"
+                    >Terminal Commands</a
+                  >
+
+                  <!-- Terminal/Shell/Bash -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="linux.html#TerminalShellBash"
+                      >Terminal/Shell/Bash</a
+                    >
+                  </li>
+                  <!-- Syntax of Shell Command -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="linux.html#SyntaxofShellCommand"
+                      >Syntax of Shell Command</a
+                    >
+                  </li>
+                  <!-- TerminalC -->
+                  <li class="toctree-l2">
+                    <a class="reference internal" href="linux.html#TerminalC"
+                      >Terminal Commands</a
+                    >
+                  </li>
+
+                  <!-- Skill Task -->
+                  <li class="toctree-l2">
+                    <a class="reference internal" href="linux.html#SkillTask"
+                      >Skill Task</a
+                    >
+                  </li>
+
+                  <!-- Copy (cp) Command -->
+                  <li class="toctree-l2">
+                    <a class="reference internal" href="linux.html#CopyCommand"
+                      >Copy (cp) Command</a
+                    >
+                  </li>
+
+                  <!-- Skill Task -->
+                  <li class="toctree-l2">
+                    <a class="reference internal" href="linux.html#SkillTask2"
+                      >Skill Task</a
+                    >
+                  </li>
+
+                  <!-- Move (mv) and Remove (rm) Commands -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="linux.html#MoveRemoveCommands"
+                      >Move (mv) and Remove (rm) Commands</a
+                    >
+                  </li>
+
+                  <!-- Change Mode : chmod -->
+                  <li class="toctree-l2">
+                    <a class="reference internal" href="linux.html#chmod"
+                      >Change Mode : chmod</a
+                    >
+                  </li>
+
+                  <!-- Redirection Operators (> and >>) -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="linux.html#RedirectionOperators"
+                      >Redirection Operators (> and >>)</a
+                    >
+                  </li>
+
+                  <!-- Terminal Commands -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="linux.html#TerminalCommands4"
+                      >Terminal Commands</a
+                    >
+                  </li>
+
+                  <!-- Command : pipe (|), grep, printenv, &&, || -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="linux.html#Commandpipegrepprintenv"
+                      >Command : pipe (|), grep, printenv, &&, ||</a
+                    >
+                  </li>
+
+                  <!-- Command -->
+                  <li class="toctree-l2">
+                    <a class="reference internal" href="linux.html#Command"
+                      >Command</a
+                    >
+                  </li>
+
+                  <!-- Virtual Environment -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="linux.html#VirtualEnvironment"
+                      >Virtual Environment</a
+                    >
+                  </li>
+
+                  <!-- Quoting -->
+                  <li class="toctree-l2">
+                    <a class="reference internal" href="linux.html#Quoting"
+                      >Quoting</a
+                    >
+                  </li>
+
+                  <!-- Secure Shell (ssh) -->
+                  <li class="toctree-l2">
+                    <a class="reference internal" href="linux.html#SecureShell"
+                      >Secure Shell (ssh)</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Right Section -->
+      <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+        <nav class="wy-nav-top" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="/index.html">Dr. Vijay Kumar Jadon</a>
+        </nav>
+
+        <div class="wy-nav-content">
+          <div class="rst-content">
+            <div role="navigation" aria-label="Page navigation">
+              <ul class="wy-breadcrumbs">
+                <li>
+                  <a
+                    href="/index.html"
+                    class="icon icon-home"
+                    aria-label="Home"
+                  ></a>
+                </li>
+                <li class="breadcrumb-item active">
+                  ROS (Robot Operating System) Course - Dr. Vijay Kumar Jadon
+                </li>
+                <li class="wy-breadcrumbs-aside">
+                  <a
+                    href="https://github.com/vkjadon"
+                    class="fa fa-github"
+                    target="_blank"
+                  >
+                    GitHub</a
+                  >
+                </li>
+              </ul>
+              <hr />
+            </div>
+            <div
+              role="main"
+              class="document"
+              itemscope="itemscope"
+              itemtype="http://schema.org/Article"
+            >
+              <section itemprop="articleBody">
+                <section id="ROS2CoreConcepts">
+                  <span id="id1"></span>
+                  <!-- ROS2 Core Concepts -->
+                  <h1>
+                    ROS2 Core Concepts [Creating a Python Package]<a
+                      class="headerlink"
+                      href="#ROS2CoreConcepts"
+                      title="Link to this heading"
+                      ></a
+                    >
+                  </h1>
+                  <img
+                    src="../img/ROS2.png"
+                    alt="ROS (Robot Operating System)"
+                  />
+                  <!-- Python Package -->
+                  <section id="PythonPackage">
+                    <h2>
+                      Python Package
+                      <a
+                        class="headerlink"
+                        href="#PythonPackage"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h2>
+                    <p>
+                      Python Packages are a way to organize and structure your
+                      Python code into reusable components. Think of it like a
+                      folder that contains related Python files (modules) that
+                      work together to provide certain functionality. Packages
+                      help keep your code organized, make it easier to manage
+                      and maintain, and allow you to share your code with
+                      others. They're like a toolbox where you can store and
+                      organize your tools (functions and classes) for easy
+                      access and reuse in different projects.
+                    </p>
+                    <pre class="language-bash"><code>~$ ros2 pkg -h</code></pre>
+                    <pre
+                      class="language-bash"
+                    ><code>~$ ros2 pkg create -h</code></pre>
+                    <img src="img/ROS2pkgcreate.png" alt="ROS2 pkg create" />
+                    <pre
+                      class="language-bash"
+                    ><code>~/ros2_ws/src$ ros2 pkg create --build-type ament_python test_pkg</code></pre>
+                    <p>
+                      <img
+                        src="img/ROS2pkgfolderstructure.png"
+                        alt="ROS2 pkg folder structure"
+                      />
+                    </p>
+                    <p>
+                      <img
+                        src="img/ROS2pkgfolderstructure2.png"
+                        alt="ROS2 pkg folder structure"
+                      />
+                    </p>
+                    <p><img src="img/ROS2pkginfo.png" alt="ROS2 pkg info" /></p>
+                  </section>
+
+                  <!-- Executing Node as Python Script -->
+                  <section id="ExecutingNodeasPythonScript">
+                    <h2>
+                      Executing Node as Python Script
+                      <a
+                        class="headerlink"
+                        href="#ExecutingNodeasPythonScript"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h2>
+                    <pre
+                      class="language-bash"
+                    ><code>~/ros2_ws/src $ cd ..</code></pre>
+                    <pre class="language-bash"><code>colcon build</code></pre>
+                    <p><strong>Alternative Method: </strong></p>
+                    <pre
+                      class="language-bash"
+                    ><code>~/ros2_ws $ colcon build --packages-select test_pkg</code></pre>
+                    <pre
+                      class="language-bash"
+                    ><code>~/ros2_ws/src/test_pkg/test_pkg $ colcon build --packages-select test_pkg</code></pre>
+                    <pre
+                      class="language-bash"
+                    ><code>~/ros2_ws/src/test_pkg/test_pkg $ touch test_node.py</code></pre>
+                    <pre
+                      class="language-bash"
+                    ><code>~/ros2_ws/src/test_pkg/test_pkg $ chmod +x test_node.py</code></pre>
+                    <pre
+                      class="language-bash"
+                    ><code>~/ros2_ws/src/test_pkg/test_pkg $ ./test_node.py</code></pre>
+                    <p>No error, but, nothing is displayed</p>
+
+                    <p>
+                      Open
+                      <span class="color-blue"><strong>src</strong></span> in
+                      <span class="color-green"><strong>vscode</strong></span>
+                      and open
+                      <span class="color-blue"
+                        ><strong>test_node.py</strong></span
+                      >. Write a small node to print
+                      <em>"Hi from test_package"</em>
+                    </p>
+                    <img
+                      src="img/ExecutingNodeasPythonScript.png"
+                      alt="Executing Node as Python Script"
+                    />
+                    <pre
+                      class="language-bash"
+                    ><code>~/ros2_ws/src/test_pkg/test_pkg $ ./test_node.py</code></pre>
+                    <p><em>$ Hi from test_package </em></p>
+                  </section>
+
+                  <!-- Executing the Script as Python Package -->
+                  <section id="ExecutingtheScriptasPythonPackage"></section>
+                  <h2>
+                    Executing the Script as Python Package
+                    <a
+                      class="headerlink"
+                      href="#ExecutingtheScriptasPythonPackage"
+                      title="Link to this heading"
+                      ></a
+                    >
+                  </h2>
+                  <p>
+                    Open
+                    <span class="color-blue"><strong>setup.py</strong></span
+                    >. Add <em>"node_exe=test_pkg.test_node:main"</em>
+                  </p>
+                  <img
+                    src="img/ExecutingtheScriptasPythonPackage.png"
+                    alt="Executing the Script as Python Package"
+                  />
+                  <pre
+                    class="language-bash"
+                  ><code>~/ros2_ws$ colcon build</code></pre>
+                  <pre
+                    class="language-bash"
+                  ><code>~/ros2_ws $ ros2 run test_pkg node_exe</code></pre>
+                  <p>
+                    Open
+                    <span class="color-blue"><strong>test_node.py</strong></span
+                    >.
+                  </p>
+                  <p>
+                    Change to "<em>Hi from test_package-1</em>".
+                    <span class="color-green"><strong>Save</strong></span>
+                  </p>
+                  <pre
+                    class="language-bash"
+                  ><code>~/ros2_ws $ ros2 run test_pkg node_exe</code></pre>
+                  <p>No change observed. To see changes, build again</p>
+                </section>
+
+                <!-- Building with --symlink-install -->
+                <section id="Buildingwith--symlink-install">
+                  <h2>
+                    Building with --symlink-install
+                    <a
+                      class="headerlink"
+                      href="#Buildingwith--symlink-install"
+                      title="Link to this heading"
+                      ></a
+                    >
+                  </h2>
+                  <p>
+                    Changes to source files are immediately reflected in the
+                    install space when we use "<em class="color-blue"
+                      ><strong>--symlink-install</strong></em
+                    >" option with
+                    <span class="color-red"><strong>colcon build</strong></span
+                    >.
+                  </p>
+                  <div class="border-2px-solid-red padding-10px">
+                    <p>
+                      Make sure you have
+                      <span class="color-blue"
+                        ><strong>setuptools</strong></span
+                      >
+                      version 58.2.0. Check using pip3 and grep
+                    </p>
+                    <pre
+                      class="language-python"
+                    ><code>~$pip3 install setuptools==58.2.0</code></pre>
+                  </div>
+                  <pre
+                    class="language-bash"
+                  ><code>~/ros2_ws $[2] colcon build --symlink-install</code></pre>
+                  <pre
+                    class="language-bash"
+                  ><code>~/ros2_ws $ ros2 run test_pkg node_exe</code></pre>
+                  <p><em>$ Hi from test_package - 1</em></p>
+
+                  <p>Change to "<em>Hi from test_package-2</em>".</p>
+                  <pre
+                    class="language-bash"
+                  ><code>~/ros2_ws $ ros2 run test_pkg node_exe</code></pre>
+                  <p><em>$ Hi from test_package - 2</em></p>
+                  <pre
+                    class="language-bash"
+                  ><code>~/ros2_ws $[2] ros2 run test_pkg node_exe</code></pre>
+                  <p><em>$ Hi from test_package - 2</em></p>
+                  <p>Close all the terminals. Open again. Run package</p>
+                  <pre
+                    class="language-bash"
+                  ><code>~/ros2_ws $ ros2 run test_pkg node_exe</code></pre>
+                  <p><em>$ Package 'test_pkg' not found</em></p>
+                  <pre
+                    class="language-bash"
+                  ><code>~/ros2_ws $ ros2 run test_pkg test_node</code></pre>
+                  <p>
+                    Edit <span class="color-blue">test_node.py</span> in any
+                    editor; we will use <em class="color-green">vscode</em>.
+                    Change the text to "<em>Hi from ROS Node</em>" and observe
+                    the changes in the output. There are None.
+                  </p>
+                  <pre
+                    class="language-bash"
+                  ><code>~/ros2_ws $ colcon build --packages-select test_pkg</code></pre>
+                  <pre
+                    class="language-bash"
+                  ><code>~/ros2_ws $ ros2 run test_pkg test_node</code></pre>
+                  <p>
+                    Observe the changes in the output. The output text changes
+                    from "<em>Hi from test_package</em>" to "<em
+                      >Hi from ROS Node</em
+                    >"
+                  </p>
+                </section>
+                <!-- Setting ‘--symlink-install’ Default  -->
+                <section id="Setting--symlink-installDefault">
+                  <h2>
+                    Setting '--symlink-install' Default
+                    <a
+                      class="headerlink"
+                      href="#Setting--symlink-installDefault"
+                      title="Link to this heading"
+                      ></a
+                    >
+                  </h2>
+                  <p class="font-bold">
+                    Create the directory (if it doesn't exist):
+                  </p>
+                  <pre
+                    class="language-bash"
+                  ><code>mkdir -p ~/.colcon</code></pre>
+                  <p class="font-bold">Create the defaults.yaml file:</p>
+                  <pre
+                    class="language-bash"
+                  ><code>nano ~/.colcon/defaults.yaml</code></pre>
+                  <p class="font-bold">
+                    Add your desired configuration settings to defaults.yaml.
+                  </p>
+                  <pre
+                    class="language-bash"
+                  ><code>build: symlink-install: true</code></pre>
+                  <p class="font-bold">
+                    Navigate to the root directory of your workspace:
+                  </p>
+                  <p class="font-bold">Create the colcon.defaults.yaml file:</p>
+                  <pre
+                    class="language-bash"
+                  ><code>nano colcon.defaults.yaml</code></pre>
+                  <p class="font-bold">
+                    Add your desired configuration settings to
+                    colcon.defaults.yaml.
+                  </p>
+                  <pre
+                    class="language-bash"
+                  ><code>build: symlink-install: true</code></pre>
+                  <p>
+                    You can verify that your settings are being applied by
+                    running colcon and observing the behavior or by inspecting
+                    the build logs.
+                  </p>
+                </section>
+                <!-- Creating Python Node -->
+                <section id="CreatingPythonNode">
+                  <h2>
+                    Creating Python Node
+                    <a
+                      class="headerlink"
+                      href="#CreatingPythonNode"
+                      title="Link to this heading"
+                      ></a
+                    >
+                  </h2>
+                  <p>
+                    A typical ROS program consists of the following operations:
+                  </p>
+                  <ol>
+                    <li>Initialization</li>
+                    <li>Create one or more ROS nodes</li>
+                    <li>Process node callbacks</li>
+                    <li>Shutdown</li>
+                  </ol>
+                  <a
+                    href="https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html"
+                    target="_blank"
+                    >https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html</a
+                  >
+                  <img
+                    src="img/CreatingPythonNode.png"
+                    alt="CreatingPythonNode"
+                  />
+                  <p>
+                    <span class="font-bold">rqt</span> is a graphical user
+                    interface (GUI) tool for ROS 2. Everything done in rqt can
+                    be done on the command line, but rqt provides a more
+                    user-friendly way to manipulate ROS 2 elements.
+                  </p>
+                </section>
+                <!-- ROS2 Commands : 'list' and 'info' -->
+                <section id="ROS2Commandslistandinfo">
+                  <h2>
+                    ROS2 Commands : 'list' and 'info'
+                    <a
+                      class="headerlink"
+                      href="#ROS2Commandslistandinfo"
+                      title="Link to this heading"
+                      ></a
+                    >
+                  </h2>
+                  <pre class="language-bash"><code>ros2 -h</code></pre>
+                  <pre class="language-bash"><code>ros2 run -h</code></pre>
+                  <pre class="language-bash"><code>ros2 node</code></pre>
+                  <pre class="language-bash"><code>ros2 topic</code></pre>
+                  <pre class="language-bash"><code>ros2 service</code></pre>
+                  <pre class="language-bash"><code>ros2 service -h</code></pre>
+
+                  <pre class="language-bash"><code>ros2 node list</code></pre>
+                  <pre class="language-bash"><code>ros2 topic list</code></pre>
+                  <pre
+                    class="language-bash"
+                  ><code>ros2 service list</code></pre>
+                  <pre class="language-bash"><code>ros2 action list</code></pre>
+
+                  <pre class="language-bash"><code>ros2 node info</code></pre>
+                  <pre class="language-bash"><code>ros2 topic info</code></pre>
+                  <pre
+                    class="language-bash"
+                  ><code>ros2 service info</code></pre>
+                  <pre class="language-bash"><code>ros2 action info</code></pre>
+                  <p>
+                    Use
+                    <span class="color-red font-bold">ros2 node list</span> to
+                    discover active node names.
+                  </p>
+                  <p>
+                    Use
+                    <span class="color-red font-bold">ros2 node info</span> to
+                    introspect on a single node.
+                  </p>
+
+                  <pre class="language-bash"><code>ros2 pkg list</code></pre>
+                  <pre class="language-bash"><code>ros2 pkg --help</code></pre>
+
+                  <p>
+                    The ros2 pkg list command is a command-line tool used in ROS
+                    2 to list all the packages that are available in the system.
+                  </p>
+                  <p>
+                    When this command is executed, ROS 2 searches the package
+                    paths defined in the AMENT_PREFIX_PATH environment variable
+                    and lists all the packages it finds. The output is a list of
+                    package names, one per line.
+                  </p>
+                  <p>
+                    This command is useful when working with ROS 2 as it allows
+                    the user to quickly check which packages are available in
+                    the system, and can be used as a starting point for
+                    building, testing, or using ROS 2 packages. It can also be
+                    used to check if a specific package is installed in the
+                    system or to verify that a new package has been added to the
+                    AMENT_PREFIX_PATH correctly.
+                  </p>
+                </section>
+                <!-- Using Domain ID and Localhost -->
+                <section id="UsingDomainIDandLocalhost">
+                  <h2>
+                    Using Domain ID and Localhost
+                    <a
+                      class="headerlink"
+                      href="#UsingDomainIDandLocalhost"
+                      title="Link to this heading"
+                      ></a
+                    >
+                  </h2>
+                  <pre
+                    class="language-bash"
+                  ><code>~$ export ROS_DOMAIN_ID=user_defined_domain_id</code></pre>
+                  <pre
+                    class="language-bash"
+                  ><code>~$ export ROS_LOCALHOST_ONLY=1</code></pre>
+                </section>
+                <!-- ROS2 Messages -->
+                <section id="ROS2Messages">
+                  <h2>
+                    ROS2 Messages
+                    <a
+                      class="headerlink"
+                      href="#ROS2Messages"
+                      title="Link to this heading"
+                      ></a
+                    >
+                  </h2>
+                  <p>
+                    Messages are the data structures that are used to exchange
+                    information between nodes.
+                  </p>
+                  <img src="img/ROS2Messages.png" alt="ROS2Messages" />
+                  <p>
+                    ROS 2 uses a the interface definition language (IDL), to
+                    describe these interfaces.
+                  </p>
+                  <p>
+                    This description makes it easy for ROS tools to
+                    automatically generate source code for the interface type in
+                    several target languages.
+                  </p>
+                  <p>
+                    Messages are described and defined in .msg files in the
+                    msg/directory of a ROS package. .msg files are composed of
+                    two parts: fields and constants.
+                  </p>
+                  <p class="color-blue">
+                    <em class="font-bold"
+                      >A data structure is a storage that is used to store and
+                      organize data.</em
+                    >
+                  </p>
+                  <p class="color-blue">
+                    <em class="font-bold"
+                      >It is a way of arranging data on a computer so that it
+                      can be accessed and updated efficiently.</em
+                    >
+                  </p>
+                  <p>fieldtype1 <span class="color-blue">fieldname1</span></p>
+                  <p>fieldtype2 <span class="color-blue">fieldname2</span></p>
+                  <p>fieldtype3 <span class="color-blue">fieldname3</span></p>
+                  <p>string <span class="color-blue">my_string</span></p>
+
+                  <p>A single node can publish to multiple topics, subscribe to multiple topics, offer multiple services, and provide multiple actions. The specific implementation depends on the requirements of the system being built and the design choices made by the developer.</p>
+                </section>
+                <!-- Thank You -->
+                <p>Thank You. End of ROS2 Core Concepts.</p>
+              </section>
+            </div>
+            <footer>
+              <div
+                class="rst-footer-buttons"
+                role="navigation"
+                aria-label="Footer"
+              >
+                <a
+                  href="introduction.html"
+                  class="btn btn-neutral float-left"
+                  title="Introduction of ROS"
+                  accesskey="p"
+                  rel="prev"
+                  ><span
+                    class="fa fa-arrow-circle-left"
+                    aria-hidden="true"
+                  ></span>
+                  Previous</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-neutral float-right"
+                  title="Beginner: CLI tools"
+                  accesskey="n"
+                  rel="next"
+                  >Next
+                  <span
+                    class="fa fa-arrow-circle-right"
+                    aria-hidden="true"
+                  ></span
+                ></a>
+              </div>
+
+              <hr />
+
+              <div role="contentinfo">
+                <p>Copyright &#169; 2024, Dr. Vijay Kumar Jadon</p>
+                <p>
+                  <a href="https://yogeshverma.info/" target="_blank"
+                    >Developed by Yogesh Verma</a
+                  >
+                </p>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      jQuery(function () {
+        SphinxRtdTheme.Navigation.enable(true);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Syntax Highlighting with Copy Button</title>
+    <!-- Prism.js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <!-- Clipboard.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+    <style>
+        .copy-btn {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background: #f5f5f5;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        pre {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <pre class="language-js">
+        <code class="language-js" id="code1">
+            let arr = ["item1", "item2", "item3"];
+            let arr2 = ["item1", "item2", "item3", "item4"];
+            if(arr === arr2){
+              console.log("Equal");
+            }
+        </code>
+        <button class="copy-btn" data-clipboard-target="#code1">Copy</button>
+    </pre>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            new ClipboardJS('.copy-btn');
+            document.querySelectorAll('.copy-btn').forEach(button => {
+                button.addEventListener('click', () => {
+                    button.textContent = 'Copied!';
+                    setTimeout(() => {
+                        button.textContent = 'Copy';
+                    }, 2000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

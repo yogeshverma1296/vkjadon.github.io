@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- meta tags -->
+    <title>ROS (Robot Operating System) Course - Dr. Vijay Kumar Jadon</title>
+    <meta
+      name="title"
+      content="ROS (Robot Operating System) Course - Dr. Vijay Kumar Jadon"
+    />
+    <meta
+      name="description"
+      content="ROS is a meta (after or beyond) operating system that runs on the existing operating system. It provides a set of tools, libraries, and conventions that make it easier to develop, test, and deploy robot systems."
+    />
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../css/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="../css/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../css/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../css/tabs.css" />
+    <link rel="shortcut icon" href="../img/ROS.png" />
+    <script src="../js/jquery.js"></script>
+    <script src="../js/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../js/documentation_options.js"></script>
+    <script src="../js/doctools.js"></script>
+    <script src="../js/sphinx_highlight.js"></script>
+    <script src="../js/clipboard.min.js"></script>
+    <script src="../js/copybutton.js"></script>
+    <script src="../js/theme.js"></script>
+    <!-- For Syntax highlighting -->
+    <!-- Prism.js -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <!-- Clipboard.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+    <style>
+      .copy-btn {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background: #f5f5f5;
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+      }
+
+      pre {
+        position: relative;
+      }
+    </style>
+  </head>
+
+  <body class="wy-body-for-nav">
+    <div class="wy-grid-for-nav">
+      <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+        <div class="wy-side-scroll">
+          <div class="wy-side-nav-search">
+            <a href="/index.html" class="icon icon-home">
+              ROS (Robot Operating System) - Dr. Vijay Kumar Jadon
+              <img
+                src="../img/ROS.png"
+                class="logo"
+                alt="Dr. Vijay Kumar Jadon ROS Logo"
+              />
+            </a>
+          </div>
+          <div
+            class="wy-menu wy-menu-vertical"
+            data-spy="affix"
+            role="navigation"
+            aria-label="Navigation menu"
+          >
+            <ul class="current">
+              <!-- Introduction -->
+              <li class="toctree-l1">
+                <a class="reference internal" href="introduction.html"
+                  >Introduction</a
+                >
+                <ul>
+                  <!-- Robots -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="introduction.html#Robots"
+                      >Robots</a
+                    >
+                    <ul>
+                      <!-- Characteristics of Robots -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#CharacteristicsofRobots"
+                          >Characteristics of Robots</a
+                        >
+                      </li>
+                      <!-- Major Components of Robot -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#MajorComponentsofRobot"
+                          >Major Components of Robot</a
+                        >
+                      </li>
+                      <!-- Multidisciplinary Knowledge -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#MultidisciplinaryKnowledge"
+                          >Multidisciplinary Knowledge</a
+                        >
+                      </li>
+                      <!-- Autonomous Robots -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#AutonomousRobots"
+                          >Autonomous Robots</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- Why ROS -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="introduction.html#WhyROS"
+                      >ROS</a
+                    >
+                    <ul>
+                      <!-- Why ROS -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#WhyROS"
+                          >Why ROS</a
+                        >
+                      </li>
+                      <!-- Robot Operating System -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#RobotOperatingSystem"
+                          >Robot Operating System</a
+                        >
+                      </li>
+                      <!-- Robot Integration Capabilities -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#RobotIntegrationCapabilities"
+                          >Robot Integration Capabilities</a
+                        >
+                      </li>
+                      <!-- Currently Supported Distributions -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#CurrentlySupportedDistributions"
+                          >Currently Supported Distributions</a
+                        >
+                      </li>
+                      <!-- About ROS Features -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#AboutROSFeatures"
+                          >About ROS Features</a
+                        >
+                      </li>
+                      <!-- ROS Applications -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#ROSApplications"
+                          >ROS Applications</a
+                        >
+                      </li>
+                      <!-- ROS2 Concepts, Tools and Technologies -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#ROS2ConceptsToolsandTechnologies"
+                          >ROS2 Concepts, Tools and Technologies</a
+                        >
+                      </li>
+                      <!-- Current Distributions -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#CurrentDistributions"
+                          >Current Distributions</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Installation -->
+              <li class="toctree-l1">
+                <a class="reference internal" href="installation.html"
+                  >Installation</a
+                >
+                <ul>
+                  <!-- Installation Guide -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#DocsInstallationGuide"
+                      >Installation Guide</a
+                    >
+                    <!-- Docs : Installation Guide -->
+                  </li>
+
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#DocsInstallationGuide"
+                      >Docs : Installation Guide</a
+                    >
+                  </li>
+                  <!-- Ubuntu -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#Ubuntu"
+                      >Ubuntu</a
+                    >
+                  </li>
+                  <!-- Download -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#Download"
+                      >Download</a
+                    >
+                  </li>
+                  <!-- Bootable Drive -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#BootableDrive"
+                      >Bootable Drive</a
+                    >
+                  </li>
+                  <!-- Creating Virtual Machine -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#CreatingVirtualMachine"
+                      >Creating Virtual Machine</a
+                    >
+                  </li>
+                  <!-- Command : sudo -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#Commandsudo"
+                      >Command : sudo</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Linux -->
+              <li class="toctree-l1">
+                <a class="reference internal" href="linux.html">Linux</a>
+                <ul>
+                  <!-- Terminal Commands -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="linux.html#TerminalCommands"
+                      >Terminal Commands</a
+                    >
+                    
+                      <!-- Terminal/Shell/Bash -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#TerminalShellBash"
+                          >Terminal/Shell/Bash</a
+                        >
+                      </li>
+                      <!-- Syntax of Shell Command -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#SyntaxofShellCommand"
+                          >Syntax of Shell Command</a
+                        >
+                      </li>
+                      <!-- TerminalC -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#TerminalC"
+                          >Terminal Commands</a
+                        >
+                      </li>
+
+                      <!-- Skill Task -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#SkillTask"
+                          >Skill Task</a
+                        >
+                      </li>
+                      
+                      <!-- Copy (cp) Command -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#CopyCommand"
+                          >Copy (cp) Command</a
+                        >
+                      </li>
+
+                      <!-- Skill Task -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#SkillTask2"
+                          >Skill Task</a
+                        >
+                      </li>
+
+                      <!-- Move (mv) and Remove (rm) Commands -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#MoveRemoveCommands"
+                          >Move (mv) and Remove (rm) Commands</a
+                        >
+                      </li>
+
+                      <!-- Change Mode : chmod -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#chmod"
+                          >Change Mode : chmod</a
+                        >
+                      </li>
+
+                      <!-- Redirection Operators (> and >>) -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#RedirectionOperators"
+                          >Redirection Operators (> and >>)</a
+                        >
+                      </li>
+
+                      <!-- Terminal Commands -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#TerminalCommands4"
+                          >Terminal Commands</a
+                        >
+                      </li>
+
+                      <!-- Command : pipe (|), grep, printenv, &&, || -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#Commandpipegrepprintenv"
+                          >Command : pipe (|), grep, printenv, &&, ||</a
+                        >
+                      </li>
+
+                      <!-- Command -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#Command"
+                          >Command</a
+                        >
+                      </li>
+
+                      <!-- Virtual Environment -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#VirtualEnvironment"
+                          >Virtual Environment</a
+                        >
+                      </li>
+
+                      <!-- Quoting -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#Quoting"
+                          >Quoting</a
+                        >
+                      </li>
+
+                      <!-- Secure Shell (ssh) -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#SecureShell"
+                          >Secure Shell (ssh)</a
+                        >
+                      </li>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Right Section -->
+      <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+        <nav class="wy-nav-top" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="/index.html">Dr. Vijay Kumar Jadon</a>
+        </nav>
+
+        <div class="wy-nav-content">
+          <div class="rst-content">
+            <div role="navigation" aria-label="Page navigation">
+              <ul class="wy-breadcrumbs">
+                <li>
+                  <a
+                    href="/index.html"
+                    class="icon icon-home"
+                    aria-label="Home"
+                  ></a>
+                </li>
+                <li class="breadcrumb-item active">
+                  ROS (Robot Operating System) Course - Dr. Vijay Kumar Jadon
+                </li>
+                <li class="wy-breadcrumbs-aside">
+                  <a
+                    href="https://github.com/vkjadon"
+                    class="fa fa-github"
+                    target="_blank"
+                  >
+                    GitHub</a
+                  >
+                </li>
+              </ul>
+              <hr />
+            </div>
+            <div
+              role="main"
+              class="document"
+              itemscope="itemscope"
+              itemtype="http://schema.org/Article"
+            >
+              <div itemprop="articleBody">
+                <section id="ROSCourse">
+                  <span id="id1"></span>
+                  <h1>
+                    ROS (Robot Operating System) Course<a
+                      class="headerlink"
+                      href="#ROSCourse"
+                      title="Link to this heading"
+                      ></a
+                    >
+                  </h1>
+                  <img
+                    src="../img/ROS2.png"
+                    alt="ROS (Robot Operating System)"
+                  />
+                  <!-- Robots -->
+                  <section id="Robots">
+                    <h2>
+                      Robots<a
+                        class="headerlink"
+                        href="#Robots"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h2>
+                    <p>
+                      A robot is an integrated system made up of sensors,
+                      actuators, controllers, power supply and software which
+                      work co-dependently to perform a task.
+                    </p>
+                    <p>
+                      Robotics Industry Association (RIA) defines robots as a
+                      re-programmable, multifunctional manipulator designed to
+                      move material, parts, tools or specialized devices through
+                      variable programmed motion for a variety of tasks.
+                    </p>
+                    <p>
+                      It uses multi disciplinary approach and requires basic
+                      understanding of Physics, Mathematics, Engineering,
+                      Computing etc.
+                    </p>
+                  </section>
+                  <!-- Characteristics of Robots -->
+                  <section id="CharacteristicsofRobots">
+                    <h2>
+                      Characteristics of Robots<a
+                        class="headerlink"
+                        href="#CharacteristicsofRobots"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h2>
+                    <p>
+                      Robot is a machine but all machines are not robots as it
+                      should possess certain anthropomorphic characteristics.
+                    </p>
+                    <!-- Sensing -->
+                    <h3>Sensing</h3>
+                    <ul class="simple">
+                      <li>
+                        <p>Light Sensor - Eyes</p>
+                      </li>
+                      <li>
+                        <p>Touch Sensor - Hand</p>
+                      </li>
+                      <li>
+                        <p>Chemical Sensor - Nose</p>
+                      </li>
+                      <li>
+                        <p>Sonar Sensor - Ear</p>
+                      </li>
+                      <li>
+                        <p>Taste Sensor - Tongue</p>
+                      </li>
+                    </ul>
+                    <!-- Movement -->
+                    <h3>Movement</h3>
+                    <ul>
+                      <li>
+                        <p>Rolling Wheel</p>
+                      </li>
+                      <li>
+                        <p>Walking Leg</p>
+                      </li>
+                      <li>
+                        <p>Propelling action</p>
+                      </li>
+                    </ul>
+                    <!-- Energy -->
+                    <h3>Energy</h3>
+                    <ul>
+                      <li>
+                        <p>Solar</p>
+                      </li>
+                      <li>
+                        <p>Electric</p>
+                      </li>
+                      <li>
+                        <p>Battery</p>
+                      </li>
+                    </ul>
+                    <!-- Intelligence -->
+                    <h3>Intelligence</h3>
+                    <ul>
+                      <li>
+                        <p>AI</p>
+                      </li>
+                      <li>
+                        <p>Software</p>
+                      </li>
+                      <li>
+                        <p>Control</p>
+                      </li>
+                    </ul>
+                  </section>
+                  <!-- Major Components of Robot -->
+                  <section id="MajorComponentsofRobot">
+                    <h2>
+                      Major Components of Robot<a
+                        class="headerlink"
+                        href="#MajorComponentsofRobot"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h2>
+                    <h3>Sensors:</h3>
+                    <img src="../img/Robot1.jpg" alt="Sensors Robot" />
+                    <p>
+                      Sensors are used to collect information about the internal
+                      state of the robot or to communicate with the outside
+                      environment. Robots are often equipped with external
+                      sensory devices such as a vision system, touch and tactile
+                      sensors etc. which help to communicate with the
+                      environment.
+                    </p>
+                    <h3>Actuators:</h3>
+                    <img src="../img/Robot2.jpg" alt="Actuators Robot" />
+                    <p>
+                      Actuators are the muscles of the manipulators. Common
+                      types of actuators are servomotors, stepper motors,
+                      pneumatic cylinders etc.
+                    </p>
+                    <h3>Controller:</h3>
+                    <img src="../img/Robot3.jpg" alt="Controller Robot" />
+                    <p>
+                      The controller receives data from the computer, controls
+                      the motions of the actuator and coordinates these motions
+                      with the sensory feedback information.
+                    </p>
+                  </section>
+                  <!-- Multidisciplinary Knowledge -->
+                  <section id="MultidisciplinaryKnowledge">
+                    <h2>
+                      Multidisciplinary Knowledge<a
+                        class="headerlink"
+                        href="#MultidisciplinaryKnowledge"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h2>
+                    <img
+                      src="../img/MultidisciplinaryKnowledge.jpg"
+                      alt="Multidisciplinary Knowledge"
+                    />
+                    <h3>Modeling:</h3>
+                    <p>
+                      Understanding the physical principles behind the flight
+                      dynamics of aerial robotics and develop the capacity to
+                      derive their mathematical model.
+                    </p>
+                    <h3>State Estimation:</h3>
+                    <p>
+                      On-board estimation of the vehicle full pose (position and
+                      orientation) takes place.
+                    </p>
+                    <h3>Robot Controls:</h3>
+                    <p>Design high-performance flight controllers.</p>
+                    <h3>Motion Planning:</h3>
+                    <p>
+                      Develop algorithms for autonomous motion planning for
+                      aerial robotics.
+                    </p>
+                  </section>
+                  <!-- Autonomous Robots -->
+                  <section id="AutonomousRobots">
+                    <h2>
+                      Autonomous Robots<a
+                        class="headerlink"
+                        href="#AutonomousRobots"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h2>
+                    <img
+                      src="../img/AutonomousRobots3.jpg"
+                      alt="Autonomous Robots 3"
+                    />
+                    <p>
+                      Autonomous Robot has ability to move from its location to
+                      goal location using sensor information.
+                    </p>
+                    <img
+                      src="../img/AutonomousRobots1.jpg"
+                      alt="Autonomous Robots 1"
+                    />
+                    <p>
+                      The robot localizes using sensor data and updating its
+                      <span style="color: red">belief state</span> with respect
+                      to the environment map.
+                    </p>
+                    <img
+                      src="../img/AutonomousRobots2.jpg"
+                      alt="Autonomous Robots 2"
+                    />
+                  </section>
+                  <!-- Why ROS -->
+                  <section id="WhyROS">
+                    <h2>
+                      Why ROS<a
+                        class="headerlink"
+                        href="#WhyROS"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h2>
+                    <img src="../img/WhyROS.jpg" alt="WhyROS" />
+                    <p>Start building software that is already exists:</p>
+                    <ul>
+                      <li>Lack of standards</li>
+                      <li>Little code reusability</li>
+                      <li>Keep re-coding standard algorithms</li>
+                      <li>Re-coding (mostly) from scratch for any new Robot</li>
+                    </ul>
+                    <p>
+                      <strong
+                        >ROS was developed to provide a standardized,
+                        open-source framework for building robot
+                        software.</strong
+                      >
+                    </p>
+                  </section>
+                  <!-- Robot Operating System -->
+                  <section id="RobotOperatingSystem">
+                    <h2>
+                      Robot Operating System<a
+                        class="headerlink"
+                        href="#RobotOperatingSystem"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h2>
+                    <ul>
+                      <li>
+                        ROS is a meta (after or beyond) operating system that
+                        runs on the existing operating system.
+                      </li>
+                      <li>
+                        It provides a set of tools, libraries, and
+                        <span style="color: red">conventions</span> that make it
+                        easier to develop, test, and deploy robot systems.
+                      </li>
+                      <li>
+                        ROS provides a way to separate codes in
+                        <span style="color: red">reusable blocks</span> along
+                        with a set of
+                        <span style="color: red">communication tools</span> to
+                        easily communicate between all the codes.
+                      </li>
+                      <li>
+                        The development of ROS (Robot Operating System) began in
+                        2007 at Willow Garage, a robotics research lab in
+                        California, USA.
+                      </li>
+                      <li>
+                        The first version of ROS, ROS 1, was released in
+                        <span style="color: red">2010</span>.
+                      </li>
+                      <li>
+                        Since 2013, it is managed by Open Source Robotics
+                        Foundation (<span style="color: red">OSRF</span>).
+                      </li>
+                      <li>
+                        ROS 1 has limited real-time performance and difficulty
+                        in
+                        <span style="color: red"
+                          >integrating with non-ROS systems</span
+                        >.
+                      </li>
+                      <li>
+                        This led to the development of ROS 2, which was released
+                        in <span style="color: red">2017</span>.
+                      </li>
+                    </ul>
+                  </section>
+                  <!-- Robot Integration Capabilities -->
+                  <section id="RobotIntegrationCapabilities">
+                    <h2>
+                      Robot Integration Capabilities<a
+                        class="headerlink"
+                        href="#RobotIntegrationCapabilities"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h2>
+                    <img
+                      src="../img/RobotIntegrationCapabilities.png"
+                      alt="RobotIntegrationCapabilities"
+                    />
+                    <ul>
+                      <li>Free & open source, community-based, repositories</li>
+                      <li>
+                        The power of streamlined development and deployment of
+                        robotic systems across the domains enhance the ROS
+                        versatility and applicability.
+                      </li>
+                      <li>
+                        ROS facilitates the integration of cameras, LIDAR, and
+                        other sensors for monitoring application.
+                      </li>
+                      <li>
+                        User contributed packages help the implementation of
+                        specific functionality such as SLAM, planning,
+                        perception, vision, manipulation, etc.
+                      </li>
+                      <li>
+                        There are many small, generic programs that perform
+                        tasks such as visualization, logging, plotting data
+                        streams, etc.
+                      </li>
+                      <li>
+                        Its modular framework allows for testing and integration
+                        of different components such as path planning, object
+                        recognition, sensor integration, human-robot interaction
+                        etc.
+                      </li>
+                    </ul>
+                  </section>
+                  <!-- Currently Supported Distributions -->
+                  <section id="CurrentlySupportedDistributions">
+                    <h2>
+                      Currently Supported Distributions<a
+                        class="headerlink"
+                        href="#CurrentlySupportedDistributions"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h2>
+                    <img
+                      src="../img/CurrentlySupportedDistributions.png"
+                      alt="Currently Supported Distributions"
+                    />
+                    <p>
+                      <a href="http://docs.ros.org/en/rolling/Releases.html"
+                        >http://docs.ros.org/en/rolling/Releases.html</a
+                      >
+                    </p>
+                  </section>
+                  <!-- About ROS Features -->
+                  <section id="AboutROSFeatures">
+                    <h2>
+                      About ROS Features<a
+                        class="headerlink"
+                        href="#AboutROSFeatures"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h2>
+                    <ul>
+                      <li>
+                        ROS systems consist of many small programs (nodes) which
+                        connect to each other and continuously exchange
+                        messages.
+                      </li>
+                      <li>
+                        ROS as OS helps the implementation of commonly used
+                        functionality such as message-passing between processes,
+                        package management etc.
+                      </li>
+                      <li>
+                        ROS software modules can be written in any language for
+                        which a client library has been written. Currently
+                        client libraries exist for C++, Python, LISP, Java,
+                        JavaScript, MATLAB, Ruby, and more.
+                      </li>
+                      <li>
+                        The ROS conventions encourage contributors to create
+                        stand-alone libraries/packages and then wrap those
+                        libraries so they send and receive messages to/from
+                        other ROS modules.
+                      </li>
+                    </ul>
+                  </section>
+                  <!-- ROS Applications -->
+                  <section id="ROSApplications">
+                    <h2>
+                      ROS Applications<a
+                        class="headerlink"
+                        href="#ROSApplications"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h2>
+                    <img
+                      src="../img/ROSApplications.jpg"
+                      alt="ROS Applications"
+                    />
+                    <ul>
+                      <li>
+                        Waymo, Tesla, Google etc., use ROS for developing
+                        perception, planning, and control algorithms in
+                        self-driving cars.
+                      </li>
+                      <li>
+                        Whereas, Fetch Robotics and Amazon Robotics use ROS to
+                        navigate warehouses, pick items, and optimize inventory
+                        management.
+                      </li>
+                      <li>
+                        Agricultural robots, developed by companies like Blue
+                        River Technology and Agrobot, use ROS for crop
+                        monitoring, precision spraying, and harvesting.
+                      </li>
+                      <li>
+                        Industrial robots from Universal Robots and ABB, use ROS
+                        for tasks like assembly, welding, and inspection.
+                      </li>
+                      <li>
+                        Drones and ground robots, employ ROS for navigation,
+                        data collection, and analysis.
+                      </li>
+                      <li>
+                        ROS is also finding its applications for tasks such as
+                        customer interaction, information provision, and
+                        entertainment.
+                      </li>
+                      <li>
+                        ROS also supports speech recognition, natural language
+                        processing, and gesture control.
+                      </li>
+                    </ul>
+                  </section>
+                  <!-- ROS2 Concepts, Tools and Technologies -->
+                  <section id="ROS2ConceptsToolsandTechnologies">
+                    <h2>
+                      ROS2 Concepts, Tools and Technologies<a
+                        class="headerlink"
+                        href="#ROS2ConceptsToolsandTechnologies"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h2>
+                    <img
+                      src="../img/ROS2ConceptsToolsandTechnologies.jpg"
+                      alt="ROS2ConceptsToolsandTechnologies"
+                    />
+                  </section>
+                  <!-- Current Distributions -->
+                  <section id="CurrentDistributions">
+                    <h2>
+                      Current Distributions<a
+                        class="headerlink"
+                        href="#CurrentDistributions"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h2>
+                    <p>
+                      <a href="http://docs.ros.org/en/rolling/Releases.html"
+                        >http://docs.ros.org/en/rolling/Releases.html</a
+                      >
+                    </p>
+                    <img
+                      src="../img/CurrentDistributions.png"
+                      alt="Current Distributions"
+                    />
+                  </section>
+                  <!-- Thank You -->
+                  <p>Thank You. End of Introduction of ROS</p>
+                </section>
+              </div>
+            </div>
+            <footer>
+              <div
+                class="rst-footer-buttons"
+                role="navigation"
+                aria-label="Footer"
+              >
+                <a
+                  href="../ROS.html"
+                  class="btn btn-neutral float-left"
+                  title="ROS.html"
+                  accesskey="p"
+                  rel="prev"
+                  ><span
+                    class="fa fa-arrow-circle-left"
+                    aria-hidden="true"
+                  ></span>
+                  Previous</a
+                >
+                <a
+                  href="installation.html"
+                  class="btn btn-neutral float-right"
+                  title="Installation of ROS"
+                  accesskey="n"
+                  rel="next"
+                  >Next
+                  <span
+                    class="fa fa-arrow-circle-right"
+                    aria-hidden="true"
+                  ></span
+                ></a>
+              </div>
+
+              <hr />
+
+              <div role="contentinfo">
+                <p>Copyright &#169; 2024, Dr. Vijay Kumar Jadon</p>
+                <p>
+                  <a href="https://yogeshverma.info/" target="_blank"
+                    >Developed by Yogesh Verma</a
+                  >
+                </p>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      jQuery(function () {
+        SphinxRtdTheme.Navigation.enable(true);
+      });
+    </script>
+    <!-- for highlighting text -->
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        new ClipboardJS(".copy-btn");
+        document.querySelectorAll(".copy-btn").forEach((button) => {
+          button.addEventListener("click", () => {
+            button.textContent = "Copied!";
+            setTimeout(() => {
+              button.textContent = "Copy";
+            }, 2000);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

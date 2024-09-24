@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- meta tags -->
+    <title>ROS (Robot Operating System) Course - Dr. Vijay Kumar Jadon</title>
+    <meta
+      name="title"
+      content="ROS (Robot Operating System) Course - Dr. Vijay Kumar Jadon"
+    />
+    <meta
+      name="description"
+      content="ROS is a meta (after or beyond) operating system that runs on the existing operating system. It provides a set of tools, libraries, and conventions that make it easier to develop, test, and deploy robot systems."
+    />
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../css/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="../css/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../css/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../css/tabs.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="shortcut icon" href="../img/ROS.png" />
+    <script src="../js/jquery.js"></script>
+    <script src="../js/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../js/documentation_options.js"></script>
+    <script src="../js/doctools.js"></script>
+    <script src="../js/sphinx_highlight.js"></script>
+    <script src="../js/clipboard.min.js"></script>
+    <script src="../js/copybutton.js"></script>
+    <script src="../js/theme.js"></script>
+    <!-- For Syntax highlighting -->
+    <!-- Prism.js -->
+    <link rel="stylesheet" href="../prism/prism.css">
+    <script async src="../prism/prism.js"></script>
+    <!-- Clipboard.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+  </head>
+
+  <body class="wy-body-for-nav">
+    <div class="wy-grid-for-nav">
+      <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+        <div class="wy-side-scroll">
+          <div class="wy-side-nav-search">
+            <a href="/index.html" class="icon icon-home">
+              ROS (Robot Operating System) - Dr. Vijay Kumar Jadon
+              <img
+                src="../img/ROS.png"
+                class="logo"
+                alt="Dr. Vijay Kumar Jadon ROS Logo"
+              />
+            </a>
+          </div>
+          <div
+            class="wy-menu wy-menu-vertical"
+            data-spy="affix"
+            role="navigation"
+            aria-label="Navigation menu"
+          >
+            <ul class="current">
+              <!-- Introduction -->
+              <li class="toctree-l1">
+                <a class="reference internal" href="introduction.html"
+                  >Introduction</a
+                >
+                <ul>
+                  <!-- Robots -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="introduction.html#Robots"
+                      >Robots</a
+                    >
+                    <ul>
+                      <!-- Characteristics of Robots -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#CharacteristicsofRobots"
+                          >Characteristics of Robots</a
+                        >
+                      </li>
+                      <!-- Major Components of Robot -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#MajorComponentsofRobot"
+                          >Major Components of Robot</a
+                        >
+                      </li>
+                      <!-- Multidisciplinary Knowledge -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#MultidisciplinaryKnowledge"
+                          >Multidisciplinary Knowledge</a
+                        >
+                      </li>
+                      <!-- Autonomous Robots -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#AutonomousRobots"
+                          >Autonomous Robots</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- Why ROS -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="introduction.html#WhyROS"
+                      >ROS</a
+                    >
+                    <ul>
+                      <!-- Why ROS -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#WhyROS"
+                          >Why ROS</a
+                        >
+                      </li>
+                      <!-- Robot Operating System -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#RobotOperatingSystem"
+                          >Robot Operating System</a
+                        >
+                      </li>
+                      <!-- Robot Integration Capabilities -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#RobotIntegrationCapabilities"
+                          >Robot Integration Capabilities</a
+                        >
+                      </li>
+                      <!-- Currently Supported Distributions -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#CurrentlySupportedDistributions"
+                          >Currently Supported Distributions</a
+                        >
+                      </li>
+                      <!-- About ROS Features -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#AboutROSFeatures"
+                          >About ROS Features</a
+                        >
+                      </li>
+                      <!-- ROS Applications -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#ROSApplications"
+                          >ROS Applications</a
+                        >
+                      </li>
+                      <!-- ROS2 Concepts, Tools and Technologies -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#ROS2ConceptsToolsandTechnologies"
+                          >ROS2 Concepts, Tools and Technologies</a
+                        >
+                      </li>
+                      <!-- Current Distributions -->
+                      <li class="toctree-l3">
+                        <a
+                          class="reference internal"
+                          href="introduction.html#CurrentDistributions"
+                          >Current Distributions</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Installation -->
+              <li class="toctree-l1">
+                <a class="reference internal" href="installation.html"
+                  >Installation</a
+                >
+                <ul>
+                  <!-- Installation Guide -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#DocsInstallationGuide"
+                      >Installation Guide</a
+                    >
+                    <!-- Docs : Installation Guide -->
+                  </li>
+
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#DocsInstallationGuide"
+                      >Docs : Installation Guide</a
+                    >
+                  </li>
+                  <!-- Ubuntu -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#Ubuntu"
+                      >Ubuntu</a
+                    >
+                  </li>
+                  <!-- Download -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#Download"
+                      >Download</a
+                    >
+                  </li>
+                  <!-- Bootable Drive -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#BootableDrive"
+                      >Bootable Drive</a
+                    >
+                  </li>
+                  <!-- Creating Virtual Machine -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#CreatingVirtualMachine"
+                      >Creating Virtual Machine</a
+                    >
+                  </li>
+                  <!-- Command : sudo -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="installation.html#Commandsudo"
+                      >Command : sudo</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Linux -->
+              <li class="toctree-l1">
+                <a class="reference internal" href="linux.html">Linux</a>
+                <ul>
+                  <!-- Terminal Commands -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="linux.html#TerminalCommands"
+                      >Terminal Commands</a
+                    >
+                    
+                      <!-- Terminal/Shell/Bash -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#TerminalShellBash"
+                          >Terminal/Shell/Bash</a
+                        >
+                      </li>
+                      <!-- Syntax of Shell Command -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#SyntaxofShellCommand"
+                          >Syntax of Shell Command</a
+                        >
+                      </li>
+                      <!-- TerminalC -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#TerminalC"
+                          >Terminal Commands</a
+                        >
+                      </li>
+
+                      <!-- Skill Task -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#SkillTask"
+                          >Skill Task</a
+                        >
+                      </li>
+                      
+                      <!-- Copy (cp) Command -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#CopyCommand"
+                          >Copy (cp) Command</a
+                        >
+                      </li>
+
+                      <!-- Skill Task -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#SkillTask2"
+                          >Skill Task</a
+                        >
+                      </li>
+
+                      <!-- Move (mv) and Remove (rm) Commands -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#MoveRemoveCommands"
+                          >Move (mv) and Remove (rm) Commands</a
+                        >
+                      </li>
+
+                      <!-- Change Mode : chmod -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#chmod"
+                          >Change Mode : chmod</a
+                        >
+                      </li>
+
+                      <!-- Redirection Operators (> and >>) -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#RedirectionOperators"
+                          >Redirection Operators (> and >>)</a
+                        >
+                      </li>
+
+                      <!-- Terminal Commands -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#TerminalCommands4"
+                          >Terminal Commands</a
+                        >
+                      </li>
+
+                      <!-- Command : pipe (|), grep, printenv, &&, || -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#Commandpipegrepprintenv"
+                          >Command : pipe (|), grep, printenv, &&, ||</a
+                        >
+                      </li>
+
+                      <!-- Command -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#Command"
+                          >Command</a
+                        >
+                      </li>
+
+                      <!-- Virtual Environment -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#VirtualEnvironment"
+                          >Virtual Environment</a
+                        >
+                      </li>
+
+                      <!-- Quoting -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#Quoting"
+                          >Quoting</a
+                        >
+                      </li>
+
+                      <!-- Secure Shell (ssh) -->
+                      <li class="toctree-l2">
+                        <a
+                          class="reference internal"
+                          href="linux.html#SecureShell"
+                          >Secure Shell (ssh)</a
+                        >
+                      </li>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Right Section -->
+      <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+        <nav class="wy-nav-top" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="/index.html">Dr. Vijay Kumar Jadon</a>
+        </nav>
+
+        <div class="wy-nav-content">
+          <div class="rst-content">
+            <div role="navigation" aria-label="Page navigation">
+              <ul class="wy-breadcrumbs">
+                <li>
+                  <a
+                    href="/index.html"
+                    class="icon icon-home"
+                    aria-label="Home"
+                  ></a>
+                </li>
+                <li class="breadcrumb-item active">
+                  ROS (Robot Operating System) Course - Dr. Vijay Kumar Jadon
+                </li>
+                <li class="wy-breadcrumbs-aside">
+                  <a
+                    href="https://github.com/vkjadon"
+                    class="fa fa-github"
+                    target="_blank"
+                  >
+                    GitHub</a
+                  >
+                </li>
+              </ul>
+              <hr />
+            </div>
+            <div
+              role="main"
+              class="document"
+              itemscope="itemscope"
+              itemtype="http://schema.org/Article"
+            >
+              <div itemprop="articleBody">
+                <section id="ROSCourse">
+                  <span id="id1"></span>
+                  <h1>
+                    ROS (Robot Operating System) Course<a
+                      class="headerlink"
+                      href="#ROSCourse"
+                      title="Link to this heading"
+                      ></a
+                    >
+                  </h1>
+                  <img
+                    src="../img/ROS2.png"
+                    alt="ROS (Robot Operating System)"
+                  />
+                  <!-- Terminal Commands -->
+                  <section id="TerminalCommands">
+                    <h2>
+                      Terminal Commands<a
+                        class="headerlink"
+                        href="#TerminalCommands"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h2>
+                  </section>
+                  <!-- Terminal/Shell/Bash -->
+                  <section id="TerminalShellBash">
+                    <h3>
+                      Terminal/Shell/Bash<a
+                        class="headerlink"
+                        href="#TerminalShellBash"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h3>
+                    <ul>
+                      <li>
+                        A <span class="color-red font-bold">shell</span> is a user
+                        interface that takes commands from the user and tells
+                        the operating system what to do.
+                      </li>
+                      <li>
+                        <span class="color-red font-bold">Bash</span> is the default
+                        shell, or command language interpreter, for the
+                        <strong>GNU</strong> operating system.
+                      </li>
+                      <li>
+                        It runs scripts (multiple command) non-interactively as
+                        a program.
+                      </li>
+                      <li>
+                        The name is an acronym for the 'Bourne-Again SHell'.
+                      </li>
+                      <li>
+                        Bash incorporates useful features from the Korn shell
+                        <strong>ksh</strong> and the C shell
+                        <strong>csh</strong>.
+                      </li>
+                      <li>There is no "undo" in bash.</li>
+                      <li>
+                        Command is almost always entered in all lowercase
+                        characters.
+                      </li>
+                    </ul>
+                    <p>
+                      <span class="color-blue font-bold">.bashrc</span> is a script that
+                      is executed whenever a new terminal session is started in
+                      interactive mode. <br />
+                      It is used to set environment variables, create aliases,
+                      define functions, and configure other shell preferences.
+                    </p>
+                  </section>
+                  <!-- Syntax of Shell Command -->
+                  <section id="SyntaxofShellCommand">
+                    <h2>
+                      Syntax of Shell Command<a
+                        class="headerlink"
+                        href="#SyntaxofShellCommand"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h2>
+                    <ul>
+                      <li>
+                        In general, a Shell command consists of the command
+                        itself followed by arguments, separated by spaces :
+                        <pre class="language-bash"><code>command options(s) filename(s)</code></pre>
+                      </li>
+                      <li>
+                        The <em>options</em> modify the way the command works. A
+                        hyphen followed by a single character, such as -a is a
+                        common way to write option.
+                        <pre class="language-bash"><code>ls -a</code></pre>
+                      </li>
+                      <li>
+                        We use two hyphens followed by a word.
+                        <pre class="language-bash"><code>ls --help</code></pre>
+                      </li>
+                      <li>
+                        The <em>filename</em> is the last argument for a lot of shell
+                        commands. It is simply the file or files that you want
+                        the command to work on.
+                      </li>
+                      <li>
+                        Not all commands work on files, such as
+                        <strong>ssh</strong>, which takes the name of a host as
+                        its argument.
+                      </li>
+                    </ul>
+                    <pre class="language-bash"><code>python3 --version</code></pre>
+                    <pre class="language-bash"><code>info bash</code></pre>
+                  </section>
+                  <!-- Terminal Commands -->
+                  <section id="TerminalC">
+                    <h2>
+                      Terminal Commands<a
+                        class="headerlink"
+                        href="#TerminalC"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h2>
+                    <ol>
+                      <!-- pwd -->
+                      <li>
+                        <p>
+                          <span class="color-red font-bold">pwd</span> : Print name of the "Present Working Directory"
+                        </p>
+                        <pre class="language-bash"><code>pwd</code></pre>
+                      </li>
+                      <!-- mkdir -->
+                      <li>
+                        <p>
+                          <span class="color-red font-bold">mkdir</span> : Create a directory
+                        </p>
+                        <pre class="language-bash"><code>mkdir test_folder</code></pre>
+                      </li>
+                      <!-- ls -->
+                      <li>
+                        <p>
+                          <span class="color-red font-bold">ls</span> : List of the directory
+                        </p>
+                        <pre class="language-bash"><code>ls</code></pre>
+                      </li>
+                      <!-- cd -->
+                      <li>
+                        <p>
+                          <span class="color-red font-bold">cd</span> : Change directory to
+                          specified target
+                        </p>
+                        <pre class="language-bash"><code>cd test_folder</code></pre>
+                      </li>
+                      <!-- touch -->
+                      <li>
+                        <p>
+                          <span class="color-red font-bold">touch</span> : Create an empty
+                          file
+                        </p>
+                        <pre class="language-bash"><code>~/test_folder$ touch test_file_empty.txt</code></pre>
+                      </li>
+                      <!-- nano -->
+                      <li>
+                        <p><span class="color-red font-bold">nano</span> : A pre-installed text editor.</p>
+                        <pre class="language-bash"><code>~/test_folder$ nano test_file_text.txt</code></pre>
+                      </li>
+                      <!-- ls -l -->
+                      <li>
+                        <p><span class="color-red font-bold">ls </span>-l : Long list with date, owner etc.</p>
+                        <pre class="language-bash"><code>~/test_folder$ ls -l</code></pre>
+                      </li>
+                      <!-- TAB  : Tab Completion -->
+                      <li>
+                        <p><span class="color-red font-bold">TAB </span>: Tab Completion</p>
+                        <pre class="language-bash"><code>~/test_folder $ cat (use tab)</code></pre>
+                      </li>
+                      <!-- cat  : Content of a file -->
+                      <li>
+                        <p><span class="color-red font-bold">cat</span> : Content of a file</p>
+                        <pre class="language-bash"><code>~/test_folder$ cat test_file_text.txt</code></pre>
+                      </li>
+                      <!-- ~  : Root/Home directory. -->
+                      <li>
+                        <p><span class="color-red font-bold">~</span> : Root/Home directory.</p>
+                        <pre class="language-bash"><code>~/test_folder$ cd ~</code></pre>
+                      </li>
+                      <!-- ls -a : List including hidden files. -->
+                      <li>
+                        <p><span class="color-red font-bold">ls </span>-a : List including hidden files.</p>
+                        <pre class="language-bash"><code>~/test_folder$ ls -a</code></pre>
+                        <ul>
+                          <li>List includes files starting with a dot "."; means hidden file.</li>
+                          <li>These are created automatically are used for configuration purposes.</li>
+                        </ul>
+                      </li>
+                      <!-- ls -al : Long list including hidden files. -->
+                      <li>
+                        <p><span class="color-red font-bold">ls </span>-al : Long list including hidden files.</p>
+                        <pre class="language-bash"><code>~/test_folder$ ls -al</code></pre>
+                        <pre class="language-bash"><code>~/test_folder$ ls -la</code></pre>
+                      </li>
+                      <!-- man : Manual. -->
+                      <li>
+                        <p><span class="color-red font-bold">man</span> : Manual.</p>
+                        <pre class="language-bash"><code>~$ man</code></pre>
+                        <ul>
+                          <li>To <em>exit</em> the <strong>man</strong> command, you have to hit the key <strong>q</strong>.</li>
+                          <li>To <em>scroll</em> through the pages, hit the <strong>DOWN or UP ARROW Keys</strong>.</li>
+                          <li>To <em>scroll</em> through the pages, hit the <strong>spacebar</strong>.</li>
+                        </ul>
+                        <pre class="language-bash"><code>~$ man ls</code></pre>
+                        <pre class="language-bash"><code>~$ man man</code></pre>
+                        <pre class="language-bash"><code>~$ man bash</code></pre>
+                      </li>
+                    </ol>
+                  </section>
+                  <!-- Skill Task -->
+                  <section id="SkillTask">
+                    <h2>
+                      Skill Task<a
+                        class="headerlink"
+                        href="#SkillTask"
+                        title="Link to this heading"
+                        ></a
+                      >
+                    </h2>
+                    <ol>
+                      <li>
+                        <p>Make sure you are at Home directory</p>
+                        <pre class="language-bash"><code>~$ </code></pre>
+                      </li>
+
+                      <li>
+                        <p>Create a folder "child_folder" in side "test_folder"</p>
+                        <pre class="language-bash"><code>~$ mkdir test_folder/child_folder</code></pre>
+                      </li>
+
+                      <li>
+                        <p>Create "child_file_empty.txt" inside "child _folder"</p>
+                        <pre class="language-bash"><code>~$ touch test_folder/child_folder/child_file_empty.txt</code></pre>
+                      </li>
+
+                      <li>
+                        <p>Create "child_file_text.txt" inside "child _folder"</p>
+                        <pre class="language-bash"><code>~$ touch test_folder/child_folder/child_file_text.txt</code></pre>
+                      </li>
+
+                      <li>
+                        <p>Check the files are successfully created using "ls" command from Home directory</p>
+                        <pre class="language-bash"><code>~$ ls test_folder/child_folder</code></pre>
+                      </li>
+
+                      <li>
+                        <p>Add text in the file eg. "Content of the Child File". You can use <span class="color-red font-bold">gedit</span> or <span class="color-red font-bold">nano</span>.</p>
+                        <pre class="language-bash"><code>~$ gedit test_folder/child_folder/child_file_text.txt</code></pre>
+                      </li>
+  
+                      <li>
+                        <p>Display the content of the file.</p>
+                        <pre class="language-bash"><code>~$ cat test_folder/child_folder/child_file_text.txt</code></pre>
+                      </li>
+                    </ol>
+                  </section>
+                  <!-- Copy (cp) Command -->
+                  <section id="CopyCommand">
+                    <h2>Copy (cp) Command<a
+                      class="headerlink"
+                      href="#CopyCommand"
+                      title="Link to this heading"
+                      ></a
+                    ></h2>
+                    <p><span class="color-red font-bold">cp</span> : Creates a copy of a file</p>
+                    <pre class="language-bash"><code>~/test_folder/child_folder$ cp source_path target_path</code></pre>
+                    <pre class="language-bash"><code>~/test_folder/child_folder$ cp child_file_text.txt child_file_text_copy.txt</code></pre>
+                    <pre class="language-bash"><code>~/test_folder/child_folder$ cd ~</code></pre>
+                  </section>
+                  <!-- Skill Task 2 -->
+                  <section id="SkillTask2">
+                    <h2>Skill Task<a
+                      class="headerlink"
+                      href="#SkillTask2"
+                      title="Link to this heading"
+                      ></a
+                    ></h2>
+                    <p>Make sure you are in the "<span class="color-blue font-bold">test_folder</span>" directory</p>
+                    <pre class="language-bash"><code>~/test_folder$</code></pre>
+                    <p>Copy file  "<span class="color-blue font-bold">child_file_empty.txt</span>" from folder  "<span class="color-blue font-bold">child_folder</span>" to  "<span class="color-blue font-bold">child_file_empty_copy.txt</span>" in the  "<span class="color-blue font-bold">test_folder</span>"</p>
+                    <pre class="language-bash"><code>~/test_folder$ cp child_folder/child_file_empty.txt child_file_empty_copy.txt</code></pre>
+                    <p>Check the files is successfully copied using "<em>ls</em>" command</p>
+                    <pre class="language-bash"><code>~/test_folder$ ls</code></pre>
+                  </section>
+                  <!-- Move (mv) and Remove (rm) Commands -->
+                  <section id="MoveRemoveCommands">
+                    <h2>Move (mv) and Remove (rm) Commands<a
+                      class="headerlink"
+                      href="#MoveRemoveCommands"
+                      title="Link to this heading"
+                      ></a
+                    ></h2>
+                    <p><span class="color-red font-bold">mv</span> : Moves a file from a source directory to target directory</p>
+                    <pre class="language-bash"><code>$ mv source_path target_path</code></pre>
+                    <ul>
+                      <li>Move "<span class="color-blue font-bold">child_file_empty_copy.txt</span>" from the "<span class="color-blue font-bold">test_folder</span>" to "<span class="color-blue font-bold">child_folder</span>" folder.</li>
+                      <li>Check list of the "<span class="color-blue font-bold">test_folder</span>" and "<span class="color-blue font-bold">child_folder</span>".</li>
+                    </ul>
+                    <p><span class="color-red font-bold">rm</span> : Removes a file from a source directory</p>
+                    <pre class="language-bash"><code>$ rm file_path</code></pre>
+                    <ul>
+                      <li>Remove "<span class="color-blue font-bold">child_file_empty_copy.txt</span>" from the "<span class="color-blue font-bold">child_folder</span>".</li>
+                      <li>Check list of the "<span class="color-blue font-bold">child_folder</span>".</li>
+                    </ul>
+                  </section>
+                  <!-- Change Mode : chmod -->
+                  <section id="chmod">
+                    <h2>Change Mode : chmod<a
+                      class="headerlink"
+                      href="#chmod"
+                      title="Link to this heading"
+                      ></a
+                    ></h2>
+                    <p><span class="color-blue font-bold">Permissions types:</span></p>
+                    <ul>
+                      <li><strong>Read (r)</strong>: Refers to a user's ability to read the contents of the file.</li>
+                      <li><strong>Write (w)</strong>: Refers to a user's ability to write or modify a file or directory.</li>
+                      <li><strong>Execute (x)</strong>: Refers to user's ability to execute a file or view the contents of a directory. </li>
+                    </ul>
+                    <p><span class="color-blue font-bold">Permission level:</span></p>
+                    <ul>
+                      <li><strong>User (u)</strong>: Represented by first 3 characters.</li>
+                      <li><strong>Group (g)</strong>: Represented by middle 3 characters.</li>
+                      <li><strong>Other (o)</strong>: Represented by last 3 characters.</li>
+                      <li><strong>All (a)</strong>: All users</li>
+                    </ul>
+                    <p>Generally, the <strong>owner</strong> of the file has <strong>read (r)</strong> and <strong>read (r)</strong> permissions, and the group and the <strong>rest of users</strong> have only <strong>read (r)</strong> permissions.</p>
+                    <p><strong>Syntax</strong>: </p>
+                    <pre class="language-bash"><code>chmod groups_to_assign_the_permissions permissions_to_assign/remove file/folder_names</code></pre>
+                    <pre class="language-bash"><code>$ chmod permission_level+permission_type file_name</code></pre>
+                    <pre class="language-bash"><code>~ test_folder$ ls -l</code></pre>
+                    <pre class="language-bash"><code>chmod a+w file_name</code></pre>
+                    <pre class="language-bash"><code>chmod +x file_name</code></pre>
+                    <pre class="language-bash"><code>$ chmod a+w test_file_text.txt</code></pre>
+                    <pre class="language-bash"><code>~ test_folder$ ls -l</code></pre>
+                    <pre class="language-bash"><code>$ chmod o-w test_file_text.txt</code></pre>
+                    <pre class="language-bash"><code>~ test_folder$ ls -l</code></pre>
+                    <pre class="language-bash"><code>$ chmod u-w test_file_text.txt</code></pre>
+                  </section>
+                  <!-- Redirection Operators (> and >>) -->
+                  <section id="RedirectionOperators">
+                    <h2>Redirection Operators (> and >>)<a
+                      class="headerlink"
+                      href="#RedirectionOperators"
+                      title="Link to this heading"
+                      ></a
+                    ></h2>
+                    <p><em>redirect</em> the output of a command to a file</p>
+                    <p>The <span class="color-red font-bold">></span> and <span class="color-red font-bold">>></span> operators redirect the output of a command to a file.</p>
+                    <p>The operator <span class="color-red font-bold">></span> overwrites the target file with the output of the preceding command, it does not ask for permission, it just goes and does it.</p>
+                    <p>The operator <span class="color-red font-bold">>></span> appends to the target file with the output of the preceding command.</p>
+                    <pre class="language-bash"><code>~$ ls test_folder/child_folder > file_list.txt</code></pre>
+                    <pre class="language-bash"><code>~$ ls test_folder >> file_list.txt</code></pre>
+                  </section>
+                  <!-- Terminal Commands -->
+                  <section id="TerminalCommands4">
+                    <h2>Terminal Commands<a
+                      class="headerlink"
+                      href="#TerminalCommands4"
+                      title="Link to this heading"
+                      ></a
+                    ></h2>
+                    <ul>
+                      <li><strong>cat</strong> : shows the contents of a file, all at once.</li>
+                      <li><strong>more</strong> : shows the contents of a file, screen by screen.</li>
+                      <li><strong>less</strong> : also shows the contents of a file, screen by screen.</li>
+                      <li><strong>head</strong> : used to show so many lines form the top of a file.</li>
+                      <li><strong>tail</strong> : used to show so many lines form the bottom of a file.</li>
+                      <li><strong>ps</strong> : lists the processes running on the machine.</li>
+                      <li><strong>kill</strong> : terminates a process.</li>
+                      <li><strong>nice</strong> : runs a process with a lower priority.</li>
+                      <li><strong>ps ax</strong> - Shows all processes running on computer 
+                        kill &lt;pid&gt; - Kills program with process &lt;pid&gt;</li>
+                    </ul>
+                    <pre class="language-bash"><code>command options(s) filename(s)</code></pre>
+                    <ul>
+                      <li><span class="color-red font-bold">pwd</span> : Present Working Directory</li>
+                      <li><span class="color-red font-bold">mkdir</span> : Create a directory</li>
+                      <li><span class="color-red font-bold">ls</span> : List of the directory</li>
+                      <li><span class="color-red font-bold">ls -a</span> : List including hidden files.</li>
+                      <li><span class="color-red font-bold">ls -l</span> : Long list with date, owner etc.</li>
+                      <li><span class="color-red font-bold">cd</span> : Change directory to specified target.</li>
+                      <li><span class="color-red font-bold">cat</span>  : Content of a file.</li>
+                      <li><span class="color-red font-bold">~</span>  : Root/Home directory.</li>
+                      <li><span class="color-red font-bold">touch</span> : Create an empty file.</li>
+                      <li><span class="color-red font-bold">nano</span> : A pre-installed text editor.</li>
+                      <li><span class="color-red font-bold">cp</span> : Creates a copy of a file.</li>
+                      <li><span class="color-red font-bold">mv</span> : Moves a file from source to target.</li>
+                      <li><span class="color-red font-bold">rm</span> : Remove a file from source.</li>
+                      <li><span class="color-red font-bold">TAB</span>  : Tab Completion.</li>
+                      <li><span class="color-red font-bold">man</span> : Manual.</li>
+                    </ul>
+                    <pre class="language-bash"><code>$ chmod permission_level+permission_type file_name</code></pre>
+                    <p>The <span class="color-red font-bold">></span> and <span class="color-red font-bold">>></span> operators <em>redirect</em> the output of a command to a file</p>
+                  </section>
+                  <!-- Command : pipe (|), grep, printenv, &&, ||  -->
+                  <section id="Commandpipegrepprintenv">
+                    <h2>Command : pipe (|), grep, printenv, &&, ||<a
+                      class="headerlink"
+                      href="#Commandpipegrepprintenv"
+                      title="Link to this heading"
+                      ></a
+                    ></h2>
+                    <p><span class="color-red font-bold">'|'</span> or <span class="color-red font-bold">'|&'</span> : A pipeline is a sequence of one or more commands separated by one of the control operators</p>
+                    <p>The pipe can be used to link commands together to perform more complex tasks that would
+                      otherwise take multiple steps (and possibly writing information to disk).</p>
+                    <p><span class="color-red font-bold">Grep</span> : Search for patterns in file(s)</p>
+                    <p>Syntax: </p>
+                    <pre class="language-bash"><code>grep [option] Patterns file_name</code></pre>
+                    <pre class="language-bash"><code>~/test_folder$ grep -i ubuntu test_file_text.txt</code></pre>
+                    <p>Syntax:</p>
+                    <pre class="language-bash"><code>command1 | command2</code></pre>
+                    <p><span class="color-red font-bold">command1 && command2</span>: command2 is executed if, and only if, command1 returns an exit status of zero (success)</p>
+                    <p><span class="color-red font-bold">command1 || command2</span>: command2 is executed if, and only if, command1 returns a non-zero exit status </p>
+                    <pre class="language-bash"><code>~/test_folder$ ls | grep test</code></pre>
+                    <p><span class="color-red font-bold">printenv</span> : Prints the values of the specified environment variable.</p>
+                    <p>Syntax:</p>
+                    <pre class="language-bash"><code>printenv [option] variable</code></pre>
+                    <pre class="language-bash"><code>$ printenv ROS_DISTRO</code></pre>
+                  </section>
+                  <section id="Command">
+                    <h2>Command<a
+                      class="headerlink"
+                      href="#Command"
+                      title="Link to this heading"
+                      ></a
+                    ></h2>
+                    <h3><em class="color-blue">sudo and apt</em></h3>
+                    <p>The <em class="color-blue">sudo</em> command in Linux and other Unix-like operating systems stands for "superuser do."</p>
+                    <p>The apt command is a <strong>powerful command-line tool</strong>, which works with Ubuntu's Advanced Packaging Tool (APT).</p>
+                    <p>Updates the local package index with the latest package information from the repositories.</p>
+                    <pre class="language-bash"><code>$ sudo apt update</code></pre>
+                    <p>Upgrades all installed packages to the latest versions available in the updated package index.</p>
+                    <pre class="language-bash"><code>$ sudo apt upgrade</code></pre>
+                    <p>Install packages:</p>
+                    <pre class="language-bash"><code>$ sudo apt-get install packagename</code></pre>
+                    <pre class="language-bash"><code>$ sudo apt install python3-pip</code></pre>
+                    <p>Remove packages:</p>
+                    <pre class="language-bash"><code>$ sudo apt-get remove packagename</code></pre>
+                    <h3>Commands : version</h3>
+                    <pre class="language-bash"><code>$ python3 --version</code></pre>
+                    <pre class="language-bash"><code>$ pip --version</code></pre>
+                    <h3>Command : alias</h3>
+                    <p>The alias allows the user to create new name for original commands as per user convenience.</p>
+                    <pre class="language-bash"><code>$ alias new_command orignal_command</code></pre>
+                    <p>Generally, aliasing is done in <span class="color-blue font-bold">.bashrc</span> file.</p>
+                    <pre class="language-bash"><code>~$ gedit .bashrc</code></pre>
+                    <p>Add "<span class="color-red font-bold">alias</span> <span class="color-blue font-bold">python=python3</span>", then save and exit</p>
+                    <pre class="language-bash"><code>~$ python</code></pre>
+                    <p>Restart the terminal to make alias available. <span class="color-green font-bold">Check?</span></p>
+                    <p>Change "<span class="color-red font-bold">alias</span> <span class="color-blue font-bold">python=python3</span>", then save and exit</p>
+                    <pre class="language-bash"><code>~$ source ~/.bashrc</code></pre>
+                    <p><span class="color-red font-bold">source</span> is a built-in shell command that reads and executes the file content in the current shell.</p>
+                  </section>
+                  <section id="VirtualEnvironment">
+                    <h2>Virtual Environment<a
+                      class="headerlink"
+                      href="#VirtualEnvironment"
+                      title="Link to this heading"
+                      ></a
+                    ></h2>
+                    <pre class="language-bash"><code>$ sudo apt install python3-venv</code></pre>
+                    <pre class="language-bash"><code>$ python3 -m venv test_venv</code></pre>
+                    <pre class="language-bash"><code>$ source test_venv/bin/activate</code></pre>
+                    <pre class="language-bash"><code>$ deactivate</code></pre>
+                    <pre class="language-bash"><code>$ pip freeze</code></pre>
+                  </section>
+                  <section id="Quoting">
+                    <h2>Quoting<a
+                      class="headerlink"
+                      href="#Quoting"
+                      title="Link to this heading"
+                      ></a
+                    ></h2>
+                    <p><strong>Escape Character (\)</strong>: It preserves the literal value of the next character.</p>
+                    <p><strong>Single quotes (' ')</strong>: preserves the literal value of each character.</p>
+                    <p><strong>Double quotes (" ")</strong>: preserves the literal value of all characters.</p>
+                  </section>
+                  <!-- Secure Shell (ssh)  -->
+                  <section id="SecureShell">
+                    <h2>Secure Shell (ssh)<a
+                      class="headerlink"
+                      href="#SecureShell"
+                      title="Link to this heading"
+                      ></a
+                    ></h2>
+                    <ul>
+                      <li>The <strong>ssh</strong> command is a way to securely connect to a remote computer.</li>
+                      <li>Formats for this command:
+                        <ul>
+                          <li><strong>ssh hostname</strong></li>
+                          <li><strong>ssh username@hostname</strong></li>
+                          <li><strong>ssh hostname -l username</strong></li>
+                        </ul>
+                      </li>
+                      <li>If you do not specify the username, it will assume that you want to connect with the same username that you have on this local computer.</li>
+                      <li>Since you have a single username for all computers on the OIT network, you don't need to explicitly enter a username.</li>
+                      <li>But you can give a username, and will need to if your local username is different that your GL username. This might be the case if you are logging on from home and set up your username to be different from what it is on GL.</li>
+                    </ul>
+                    <h3>Demo with connecting with different usernames.</h3>
+                    <p>The command printenv | grep -i ros prints all environment variables that contain the string "ros", regardless of capitalization.</p>
+                    <pre class="language-bash"><code>printenv | grep -i ROS</code></pre>
+                    <p>The printenv command prints all the environment variables currently set in the system, while the grep command is used to search for a specific pattern in a text stream. The -i option used with grep indicates that the search should be case-insensitive, so both "ROS" and "ros" will match.</p>
+                    <p>By piping the output of printenv to grep, we can filter the environment variables to only show those that contain the string "ros". This can be useful in the context of ROS development, as many ROS-related environment variables are defined when ROS is sourced, and this command can help confirm that they are set correctly.</p>
+                    <img src="../img/Demowithconnectingwithdifferentusernames.png" alt="Demo with connecting with different usernames">
+                  </section>
+                  <!-- Thank You -->
+                  <p>Thank You. End of Basics of Linux.</p>
+                </section>
+              </div>
+            </div>
+            <footer>
+              <div
+                class="rst-footer-buttons"
+                role="navigation"
+                aria-label="Footer"
+              >
+                <a
+                  href="introduction.html"
+                  class="btn btn-neutral float-left"
+                  title="Introduction of ROS"
+                  accesskey="p"
+                  rel="prev"
+                  ><span
+                    class="fa fa-arrow-circle-left"
+                    aria-hidden="true"
+                  ></span>
+                  Previous</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-neutral float-right"
+                  title="Beginner: CLI tools"
+                  accesskey="n"
+                  rel="next"
+                  >Next
+                  <span
+                    class="fa fa-arrow-circle-right"
+                    aria-hidden="true"
+                  ></span
+                ></a>
+              </div>
+
+              <hr />
+
+              <div role="contentinfo">
+                <p>Copyright &#169; 2024, Dr. Vijay Kumar Jadon</p>
+                <p>
+                  <a href="https://yogeshverma.info/" target="_blank"
+                    >Developed by Yogesh Verma</a
+                  >
+                </p>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      jQuery(function () {
+        SphinxRtdTheme.Navigation.enable(true);
+      });
+    </script>
+  </body>
+</html>
