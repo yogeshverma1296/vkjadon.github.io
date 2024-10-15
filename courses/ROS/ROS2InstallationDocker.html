@@ -186,37 +186,6 @@
                 </ul>
               </li>
 
-              <!-- ROS2 Installation Using Docker -->
-              <li class="toctree-l1">
-                <a class="reference internal" href="ROS2InstallationDocker.html">ROS2 Installation Docker</a>
-                <ul>
-                  <!-- Docker and Container -->
-                  <li class="toctree-l2">
-                    <a
-                      class="reference internal"
-                      href="ROS2InstallationDocker.html#DockerandContainer"
-                      >Docker and Container</a
-                    >
-                  </li>
-                  <!-- Setting-Up Docker and Container -->
-                  <li class="toctree-l2">
-                    <a
-                      class="reference internal"
-                      href="ROS2InstallationDocker.html#SettingUpDockerandContainer"
-                      >Setting-Up Docker and Container</a
-                    >
-                  </li>
-                  <!-- Setting-Up Docker for ROS -->
-                  <li class="toctree-l2">
-                    <a
-                      class="reference internal"
-                      href="ROS2InstallationDocker.html#SettingUpDockerforROS"
-                      >Setting-Up Docker for ROS</a
-                    >
-                  </li>
-                </ul>
-              </li>
-
               <!-- Installation -->
               <li class="toctree-l1">
                 <a class="reference internal" href="installation.html"
@@ -278,6 +247,37 @@
                       class="reference internal"
                       href="installation.html#Commandsudo"
                       >Command : sudo</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- ROS2 Installation Using Docker -->
+              <li class="toctree-l1">
+                <a class="reference internal" href="ROS2InstallationDocker.html">ROS2 Installation Docker</a>
+                <ul>
+                  <!-- Docker and Container -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="ROS2InstallationDocker.html#DockerandContainer"
+                      >Docker and Container</a
+                    >
+                  </li>
+                  <!-- Setting-Up Docker and Container -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="ROS2InstallationDocker.html#SettingUpDockerandContainer"
+                      >Setting-Up Docker and Container</a
+                    >
+                  </li>
+                  <!-- Setting-Up Docker for ROS -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="ROS2InstallationDocker.html#SettingUpDockerforROS"
+                      >Setting-Up Docker for ROS</a
                     >
                   </li>
                 </ul>
@@ -541,459 +541,189 @@
               itemtype="http://schema.org/Article"
             >
               <section itemprop="articleBody">
-                <section id="ROS2CoreConcepts">
+                <!-- ROS2 Installation Using Docker (Docker and Container) -->
+                <section id="ROS2InstallationDocker">
                   <span id="id1"></span>
-                  <!-- ROS2 Core Concepts -->
                   <h1>
-                    ROS2 Core Concepts [Creating a Python Package]<a
+                    ROS2 Installation Using Docker (Docker and Container)<a
                       class="headerlink"
-                      href="#ROS2CoreConcepts"
+                      href="#ROS2InstallationDocker"
                       title="Link to this heading"
                       ></a
                     >
                   </h1>
-                  <img
-                    src="../img/ROS2.png"
-                    alt="ROS (Robot Operating System)"
-                  />
-                  <!-- Python Package -->
-                  <section id="PythonPackage">
-                    <h2>
-                      Python Package
-                      <a
-                        class="headerlink"
-                        href="#PythonPackage"
-                        title="Link to this heading"
-                        ></a
-                      >
-                    </h2>
-                    <p>
-                      Python Packages are a way to organize and structure your
-                      Python code into reusable components. Think of it like a
-                      folder that contains related Python files (modules) that
-                      work together to provide certain functionality. Packages
-                      help keep your code organized, make it easier to manage
-                      and maintain, and allow you to share your code with
-                      others. They're like a toolbox where you can store and
-                      organize your tools (functions and classes) for easy
-                      access and reuse in different projects.
-                    </p>
-                    <pre class="language-bash"><code>~$ ros2 pkg -h</code></pre>
-                    <pre
-                      class="language-bash"
-                    ><code>~$ ros2 pkg create -h</code></pre>
-                    <img src="img/ROS2pkgcreate.png" alt="ROS2 pkg create" />
-                    <pre
-                      class="language-bash"
-                    ><code>~/ros2_ws/src$ ros2 pkg create --build-type ament_python test_pkg</code></pre>
-                    <p>
-                      <img
-                        src="img/ROS2pkgfolderstructure.png"
-                        alt="ROS2 pkg folder structure"
-                      />
-                    </p>
-                    <p>
-                      <img
-                        src="img/ROS2pkgfolderstructure2.png"
-                        alt="ROS2 pkg folder structure"
-                      />
-                    </p>
-                    <p><img src="img/ROS2pkginfo.png" alt="ROS2 pkg info" /></p>
-                  </section>
+                </section>
+                <!-- Docker and Container -->
+                <section id="DockerandContainer">
+                  <h2>
+                    Docker and Container
+                    <a
+                      class="headerlink"
+                      href="#DockerandContainer"
+                      title="Link to this heading"
+                      ></a
+                    >
+                  </h2>
+                  <p>
+                    <strong>Docker</strong> is a platform that enables
+                    developers to create, deploy, and run applications inside
+                    lightweight containers.
+                  </p>
+                  <p>
+                    <strong>Containers</strong> package an application and its
+                    dependencies together, ensuring consistency across different
+                    environments.
+                  </p>
+                  <p>
+                    Unlike virtual machines, containers share the host system's
+                    kernel, making them more efficient and quicker to start up.
+                  </p>
+                </section>
 
-                  <!-- Executing Node as Python Script -->
-                  <section id="ExecutingNodeasPythonScript">
-                    <h2>
-                      Executing Node as Python Script
-                      <a
-                        class="headerlink"
-                        href="#ExecutingNodeasPythonScript"
-                        title="Link to this heading"
-                        ></a
-                      >
-                    </h2>
-                    <pre
-                      class="language-bash"
-                    ><code>~/ros2_ws/src $ cd ..</code></pre>
-                    <pre class="language-bash"><code>colcon build</code></pre>
-                    <p><strong>Alternative Method: </strong></p>
-                    <pre
-                      class="language-bash"
-                    ><code>~/ros2_ws $ colcon build --packages-select test_pkg</code></pre>
-                    <pre
-                      class="language-bash"
-                    ><code>~/ros2_ws/src/test_pkg/test_pkg $ colcon build --packages-select test_pkg</code></pre>
-                    <pre
-                      class="language-bash"
-                    ><code>~/ros2_ws/src/test_pkg/test_pkg $ touch test_node.py</code></pre>
-                    <pre
-                      class="language-bash"
-                    ><code>~/ros2_ws/src/test_pkg/test_pkg $ chmod +x test_node.py</code></pre>
-                    <pre
-                      class="language-bash"
-                    ><code>~/ros2_ws/src/test_pkg/test_pkg $ ./test_node.py</code></pre>
-                    <p>No error, but, nothing is displayed</p>
-
-                    <p>
-                      Open
-                      <span class="color-blue"><strong>src</strong></span> in
-                      <span class="color-green"><strong>vscode</strong></span>
-                      and open
-                      <span class="color-blue"
-                        ><strong>test_node.py</strong></span
-                      >. Write a small node to print
-                      <em>"Hi from test_package"</em>
-                    </p>
+                <!-- Setting-Up Docker and Container -->
+                <section id="SettingUpDockerandContainer">
+                  <h2>
+                    Setting-Up Docker and Container<a
+                      class="headerlink"
+                      href="#SettingUpDockerandContainer"
+                      title="Link to this heading"
+                      ></a
+                    >
+                  </h2>
+                  <!-- SettingUpDockerandContainer1 -->
+                  <p>
                     <img
-                      src="img/ExecutingNodeasPythonScript.png"
-                      alt="Executing Node as Python Script"
+                      src="img/SettingUpDockerandContainer1.png"
+                      alt="Setting Up Docker and Container 1"
                     />
-                    <pre
-                      class="language-bash"
-                    ><code>~/ros2_ws/src/test_pkg/test_pkg $ ./test_node.py</code></pre>
-                    <p><em>$ Hi from test_package </em></p>
-                  </section>
+                  </p>
+                  <!-- SettingUpDockerandContainer2 -->
+                  <p>
+                    <img
+                      src="img/SettingUpDockerandContainer2.png"
+                      alt="Setting Up Docker and Container 2"
+                    />
+                  </p>
+                  <!-- SettingUpDockerandContainer3 -->
+                  <p>
+                    <img
+                      src="img/SettingUpDockerandContainer3.png"
+                      alt="Setting Up Docker and Container 3"
+                    />
+                  </p>
+                  <!-- SettingUpDockerandContainer4 -->
+                  <p>
+                    <img
+                      src="img/SettingUpDockerandContainer4.png"
+                      alt="Setting Up Docker and Container 4"
+                    />
+                  </p>
+                  <!-- SettingUpDockerandContainer5 -->
+                  <p>
+                    <img
+                      src="img/SettingUpDockerandContainer5.png"
+                      alt="Setting Up Docker and Container 5"
+                    />
+                  </p>
+                </section>
 
-                  <!-- Executing the Script as Python Package -->
-                  <section id="ExecutingtheScriptasPythonPackage"></section>
+                <!-- Setting-Up Docker for ROS -->
+                <section id="SettingUpDockerforROS">
                   <h2>
-                    Executing the Script as Python Package
-                    <a
+                    Setting-Up Docker for ROS<a
                       class="headerlink"
-                      href="#ExecutingtheScriptasPythonPackage"
+                      href="#SettingUpDockerforROS"
                       title="Link to this heading"
                       ></a
                     >
                   </h2>
+                  <!-- SettingUpDockerforROS1 -->
                   <p>
-                    Open
-                    <span class="color-blue"><strong>setup.py</strong></span
-                    >. Add <em>"node_exe=test_pkg.test_node:main"</em>
+                    <img
+                      src="img/SettingUpDockerforROS1.png"
+                      alt="Setting Up Docker for ROS 1"
+                    />
                   </p>
+                  <!-- SettingUpDockerforROS2 -->
+                  <p>
+                    <img
+                      src="img/SettingUpDockerforROS2.png"
+                      alt="Setting Up Docker for ROS 2"
+                    />
+                    <a
+                      href="https://github.com/osrf/docker_images?tab=readme-ov-file"
+                      class="txt-underline margin-top-10px"
+                      >https://github.com/osrf/docker_images?tab=readme-ov-file</a
+                    >
+                  </p>
+                  <!-- SettingUpDockerforROS3 -->
+                  <p>
+                    <img
+                      src="img/SettingUpDockerforROS3.png"
+                      alt="Setting Up Docker for ROS 3"
+                    />
+                    <a
+                      href="https://hub.docker.com/r/osrf/ros/tags"
+                      class="txt-underline margin-top-10px"
+                      >https://hub.docker.com/r/osrf/ros/tags</a
+                    >
+                  </p>
+
+                  <pre><code class="language-bash">% docker pull osrf/ros:&lt;tag_name&gt;</code></pre>
+                  <pre><code class="language-bash">% docker pull osrf/ros:humble-desktop</code></pre>
+
+                  <img src="img/dockerpull.png" alt="docker pull" />
+
+                  <h4>List images in the Docker</h4>
+                  <pre><code class="language-bash">% docker images</code></pre>
+
+                  <h4>Run image in a container</h4>
+                  <pre><code class="language-bash">% docker run -it osrf/ros:humble-desktop</code></pre>
+                  <pre><code class="language-bash">$ apt-get update</code></pre>
+                  <pre><code class="language-bash">$ lsb_release -a</code></pre>
+
                   <img
-                    src="img/ExecutingtheScriptasPythonPackage.png"
-                    alt="Executing the Script as Python Package"
+                    src="img/Runimageinacontainer.png"
+                    alt="Run image in a container"
                   />
-                  <pre
-                    class="language-bash"
-                  ><code>~/ros2_ws$ colcon build</code></pre>
-                  <pre
-                    class="language-bash"
-                  ><code>~/ros2_ws $ ros2 run test_pkg node_exe</code></pre>
-                  <p>
-                    Open
-                    <span class="color-blue"><strong>test_node.py</strong></span
-                    >.
-                  </p>
-                  <p>
-                    Change to "<em>Hi from test_package-1</em>".
-                    <span class="color-green"><strong>Save</strong></span>
-                  </p>
-                  <pre
-                    class="language-bash"
-                  ><code>~/ros2_ws $ ros2 run test_pkg node_exe</code></pre>
-                  <p>No change observed. To see changes, build again</p>
-                </section>
 
-                <!-- Building with --symlink-install -->
-                <section id="Buildingwith--symlink-install">
-                  <h2>
-                    Building with --symlink-install
-                    <a
-                      class="headerlink"
-                      href="#Buildingwith--symlink-install"
-                      title="Link to this heading"
-                      ></a
-                    >
-                  </h2>
-                  <p>
-                    Changes to source files are immediately reflected in the
-                    install space when we use "<em class="color-blue"
-                      ><strong>--symlink-install</strong></em
-                    >" option with
-                    <span class="color-red"><strong>colcon build</strong></span
-                    >.
-                  </p>
-                  <div class="border-2px-solid-red padding-10px">
-                    <p>
-                      Make sure you have
-                      <span class="color-blue"
-                        ><strong>setuptools</strong></span
-                      >
-                      version 58.2.0. Check using pip3 and grep
-                    </p>
-                    <pre
-                      class="language-python"
-                    ><code>~$pip3 install setuptools==58.2.0</code></pre>
-                  </div>
-                  <pre
-                    class="language-bash"
-                  ><code>~/ros2_ws $[2] colcon build --symlink-install</code></pre>
-                  <pre
-                    class="language-bash"
-                  ><code>~/ros2_ws $ ros2 run test_pkg node_exe</code></pre>
-                  <p><em>$ Hi from test_package - 1</em></p>
+                  <h4>Check the container running</h4>
+                  <pre><code class="language-bash">% docker ps</code></pre>
 
-                  <p>Change to "<em>Hi from test_package-2</em>".</p>
-                  <pre
-                    class="language-bash"
-                  ><code>~/ros2_ws $ ros2 run test_pkg node_exe</code></pre>
-                  <p><em>$ Hi from test_package - 2</em></p>
-                  <pre
-                    class="language-bash"
-                  ><code>~/ros2_ws $[2] ros2 run test_pkg node_exe</code></pre>
-                  <p><em>$ Hi from test_package - 2</em></p>
-                  <p>Close all the terminals. Open again. Run package</p>
-                  <pre
-                    class="language-bash"
-                  ><code>~/ros2_ws $ ros2 run test_pkg node_exe</code></pre>
-                  <p><em>$ Package 'test_pkg' not found</em></p>
-                  <pre
-                    class="language-bash"
-                  ><code>~/ros2_ws $ ros2 run test_pkg test_node</code></pre>
+                  <h4>
+                    We can use 'docker exec' command to connect to a running
+                    container in another terminal
+                  </h4>
+                  <pre><code class="language-bash">% docker exec -it &lt;id&gt; bash</code></pre>
+
                   <p>
-                    Edit <span class="color-blue">test_node.py</span> in any
-                    editor; we will use <em class="color-green">vscode</em>.
-                    Change the text to "<em>Hi from ROS Node</em>" and observe
-                    the changes in the output. There are None.
-                  </p>
-                  <pre
-                    class="language-bash"
-                  ><code>~/ros2_ws $ colcon build --packages-select test_pkg</code></pre>
-                  <pre
-                    class="language-bash"
-                  ><code>~/ros2_ws $ ros2 run test_pkg test_node</code></pre>
-                  <p>
-                    Observe the changes in the output. The output text changes
-                    from "<em>Hi from test_package</em>" to "<em
-                      >Hi from ROS Node</em
-                    >"
-                  </p>
-                </section>
-                <!-- Setting ‘--symlink-install’ Default  -->
-                <section id="Setting--symlink-installDefault">
-                  <h2>
-                    Setting '--symlink-install' Default
-                    <a
-                      class="headerlink"
-                      href="#Setting--symlink-installDefault"
-                      title="Link to this heading"
-                      ></a
+                    <span class="border-2px-solid-red" style="padding: 5px"
+                      >Source ros2 environment and use it</span
                     >
-                  </h2>
-                  <p class="font-bold">
-                    Create the directory (if it doesn't exist):
+                    Source /opt/ros/humble/setup.bash
                   </p>
-                  <pre
-                    class="language-bash"
-                  ><code>mkdir -p ~/.colcon</code></pre>
-                  <p class="font-bold">Create the defaults.yaml file:</p>
-                  <pre
-                    class="language-bash"
-                  ><code>nano ~/.colcon/defaults.yaml</code></pre>
-                  <p class="font-bold">
-                    Add your desired configuration settings to defaults.yaml.
-                  </p>
-                  <pre
-                    class="language-bash"
-                  ><code>build: symlink-install: true</code></pre>
-                  <p class="font-bold">
-                    Navigate to the root directory of your workspace:
-                  </p>
-                  <p class="font-bold">Create the colcon.defaults.yaml file:</p>
-                  <pre
-                    class="language-bash"
-                  ><code>nano colcon.defaults.yaml</code></pre>
-                  <p class="font-bold">
-                    Add your desired configuration settings to
-                    colcon.defaults.yaml.
-                  </p>
-                  <pre
-                    class="language-bash"
-                  ><code>build: symlink-install: true</code></pre>
-                  <p>
-                    You can verify that your settings are being applied by
-                    running colcon and observing the behavior or by inspecting
-                    the build logs.
-                  </p>
-                </section>
-                <!-- Creating Python Node -->
-                <section id="CreatingPythonNode">
-                  <h2>
-                    Creating Python Node
-                    <a
-                      class="headerlink"
-                      href="#CreatingPythonNode"
-                      title="Link to this heading"
-                      ></a
-                    >
-                  </h2>
-                  <p>
-                    A typical ROS program consists of the following operations:
-                  </p>
-                  <ol>
-                    <li>Initialization</li>
-                    <li>Create one or more ROS nodes</li>
-                    <li>Process node callbacks</li>
-                    <li>Shutdown</li>
-                  </ol>
-                  <a
-                    href="https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html"
-                    target="_blank"
-                    >https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html</a
-                  >
+
+                  <h4>We can add the source command in root/.bashrc</h4>
                   <img
-                    src="img/CreatingPythonNode.png"
-                    alt="CreatingPythonNode"
+                    src="img/Addthesourcecommandinroot.png"
+                    alt="Add the source command in root"
                   />
-                  <p>
-                    <span class="font-bold">rqt</span> is a graphical user
-                    interface (GUI) tool for ROS 2. Everything done in rqt can
-                    be done on the command line, but rqt provides a more
-                    user-friendly way to manipulate ROS 2 elements.
-                  </p>
+
+                  <pre><code class="language-bash">$ docker run -it -v $PWD/source:destination &lt;id&gt;</code></pre>
+
+                  <img
+                    src="img/Addthesourcecommandinroot2.png"
+                    alt="Add the source command in root 2"
+                  />
+
+                  <pre><code class="language-bash">$ docker run -it -v $PWD/source:destination --name &lt;name&gt; &lt;id&gt;</code></pre>
                 </section>
-                <!-- ROS2 Commands : 'list' and 'info' -->
-                <section id="ROS2Commandslistandinfo">
-                  <h2>
-                    ROS2 Commands : 'list' and 'info'
-                    <a
-                      class="headerlink"
-                      href="#ROS2Commandslistandinfo"
-                      title="Link to this heading"
-                      ></a
-                    >
-                  </h2>
-                  <pre class="language-bash"><code>ros2 -h</code></pre>
-                  <pre class="language-bash"><code>ros2 run -h</code></pre>
-                  <pre class="language-bash"><code>ros2 node</code></pre>
-                  <pre class="language-bash"><code>ros2 topic</code></pre>
-                  <pre class="language-bash"><code>ros2 service</code></pre>
-                  <pre class="language-bash"><code>ros2 service -h</code></pre>
 
-                  <pre class="language-bash"><code>ros2 node list</code></pre>
-                  <pre class="language-bash"><code>ros2 topic list</code></pre>
-                  <pre
-                    class="language-bash"
-                  ><code>ros2 service list</code></pre>
-                  <pre class="language-bash"><code>ros2 action list</code></pre>
-
-                  <pre class="language-bash"><code>ros2 node info</code></pre>
-                  <pre class="language-bash"><code>ros2 topic info</code></pre>
-                  <pre
-                    class="language-bash"
-                  ><code>ros2 service info</code></pre>
-                  <pre class="language-bash"><code>ros2 action info</code></pre>
-                  <p>
-                    Use
-                    <span class="color-red font-bold">ros2 node list</span> to
-                    discover active node names.
-                  </p>
-                  <p>
-                    Use
-                    <span class="color-red font-bold">ros2 node info</span> to
-                    introspect on a single node.
-                  </p>
-
-                  <pre class="language-bash"><code>ros2 pkg list</code></pre>
-                  <pre class="language-bash"><code>ros2 pkg --help</code></pre>
-
-                  <p>
-                    The ros2 pkg list command is a command-line tool used in ROS
-                    2 to list all the packages that are available in the system.
-                  </p>
-                  <p>
-                    When this command is executed, ROS 2 searches the package
-                    paths defined in the AMENT_PREFIX_PATH environment variable
-                    and lists all the packages it finds. The output is a list of
-                    package names, one per line.
-                  </p>
-                  <p>
-                    This command is useful when working with ROS 2 as it allows
-                    the user to quickly check which packages are available in
-                    the system, and can be used as a starting point for
-                    building, testing, or using ROS 2 packages. It can also be
-                    used to check if a specific package is installed in the
-                    system or to verify that a new package has been added to the
-                    AMENT_PREFIX_PATH correctly.
-                  </p>
-                </section>
-                <!-- Using Domain ID and Localhost -->
-                <section id="UsingDomainIDandLocalhost">
-                  <h2>
-                    Using Domain ID and Localhost
-                    <a
-                      class="headerlink"
-                      href="#UsingDomainIDandLocalhost"
-                      title="Link to this heading"
-                      ></a
-                    >
-                  </h2>
-                  <pre
-                    class="language-bash"
-                  ><code>~$ export ROS_DOMAIN_ID=user_defined_domain_id</code></pre>
-                  <pre
-                    class="language-bash"
-                  ><code>~$ export ROS_LOCALHOST_ONLY=1</code></pre>
-                </section>
-                <!-- ROS2 Messages -->
-                <section id="ROS2Messages">
-                  <h2>
-                    ROS2 Messages
-                    <a
-                      class="headerlink"
-                      href="#ROS2Messages"
-                      title="Link to this heading"
-                      ></a
-                    >
-                  </h2>
-                  <p>
-                    Messages are the data structures that are used to exchange
-                    information between nodes.
-                  </p>
-                  <img src="img/ROS2Messages.png" alt="ROS2Messages" />
-                  <p>
-                    ROS 2 uses a the interface definition language (IDL), to
-                    describe these interfaces.
-                  </p>
-                  <p>
-                    This description makes it easy for ROS tools to
-                    automatically generate source code for the interface type in
-                    several target languages.
-                  </p>
-                  <p>
-                    Messages are described and defined in .msg files in the
-                    msg/directory of a ROS package. .msg files are composed of
-                    two parts: fields and constants.
-                  </p>
-                  <p class="color-blue">
-                    <em class="font-bold"
-                      >A data structure is a storage that is used to store and
-                      organize data.</em
-                    >
-                  </p>
-                  <p class="color-blue">
-                    <em class="font-bold"
-                      >It is a way of arranging data on a computer so that it
-                      can be accessed and updated efficiently.</em
-                    >
-                  </p>
-                  <p>fieldtype1 <span class="color-blue">fieldname1</span></p>
-                  <p>fieldtype2 <span class="color-blue">fieldname2</span></p>
-                  <p>fieldtype3 <span class="color-blue">fieldname3</span></p>
-                  <p>int32 <span class="color-blue">my_int</span></p>
-                  <p>string <span class="color-blue">my_string</span></p>
-
-                  <p>
-                    A single node can publish to multiple topics, subscribe to
-                    multiple topics, offer multiple services, and provide
-                    multiple actions. The specific implementation depends on the
-                    requirements of the system being built and the design
-                    choices made by the developer.
-                  </p>
-                </section>
                 <!-- Thank You -->
-                <p>Thank You. End of ROS2 Core Concepts.</p>
+                <p>
+                  Thank You. End of ROS2 Installation Using Docker (Docker and
+                  Container).
+                </p>
               </section>
             </div>
             <footer>
@@ -1003,7 +733,7 @@
                 aria-label="Footer"
               >
                 <a
-                  href="linux.html"
+                  href="installation.html"
                   class="btn btn-neutral float-left"
                   title="Introduction of ROS"
                   accesskey="p"
@@ -1015,7 +745,7 @@
                   Previous</a
                 >
                 <a
-                  href="#"
+                  href="linux.html"
                   class="btn btn-neutral float-right"
                   title="Beginner: CLI tools"
                   accesskey="n"
