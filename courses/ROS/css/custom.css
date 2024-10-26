@@ -23,3 +23,11 @@
     margin: 10px 0px 0px 0px;
     display: block;
 }
+.display-flex{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.img-width-600px{
+  width: 600px;
+}

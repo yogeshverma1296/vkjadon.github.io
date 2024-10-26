@@ -20,6 +20,8 @@
     <link rel="stylesheet" type="text/css" href="../css/graphviz.css" />
     <link rel="stylesheet" type="text/css" href="../css/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../css/tabs.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/custom.css" />
     <link rel="shortcut icon" href="../img/ROS.png" />
     <script src="../js/jquery.js"></script>
     <script src="../js/_sphinx_javascript_frameworks_compat.js"></script>
@@ -189,14 +191,6 @@
                           >ROS2 Concepts, Tools and Technologies</a
                         >
                       </li>
-                      <!-- Current Distributions -->
-                      <li class="toctree-l3">
-                        <a
-                          class="reference internal"
-                          href="introduction.html#CurrentDistributions"
-                          >Current Distributions</a
-                        >
-                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -270,7 +264,9 @@
 
               <!-- ROS2 Installation Using Docker -->
               <li class="toctree-l1">
-                <a class="reference internal" href="ROS2InstallationDocker.html">ROS2 Installation Docker</a>
+                <a class="reference internal" href="ROS2InstallationDocker.html"
+                  >ROS2 Installation Docker</a
+                >
                 <ul>
                   <!-- Docker and Container -->
                   <li class="toctree-l2">
@@ -310,139 +306,124 @@
                       href="linux.html#TerminalCommands"
                       >Terminal Commands</a
                     >
-                    
-                      <!-- Terminal/Shell/Bash -->
-                      <li class="toctree-l2">
-                        <a
-                          class="reference internal"
-                          href="linux.html#TerminalShellBash"
-                          >Terminal/Shell/Bash</a
-                        >
-                      </li>
-                      <!-- Syntax of Shell Command -->
-                      <li class="toctree-l2">
-                        <a
-                          class="reference internal"
-                          href="linux.html#SyntaxofShellCommand"
-                          >Syntax of Shell Command</a
-                        >
-                      </li>
-                      <!-- TerminalC -->
-                      <li class="toctree-l2">
-                        <a
-                          class="reference internal"
-                          href="linux.html#TerminalC"
-                          >Terminal Commands</a
-                        >
-                      </li>
 
-                      <!-- Skill Task -->
-                      <li class="toctree-l2">
-                        <a
-                          class="reference internal"
-                          href="linux.html#SkillTask"
-                          >Skill Task</a
-                        >
-                      </li>
-                      
-                      <!-- Copy (cp) Command -->
-                      <li class="toctree-l2">
-                        <a
-                          class="reference internal"
-                          href="linux.html#CopyCommand"
-                          >Copy (cp) Command</a
-                        >
-                      </li>
+                    <!-- Terminal/Shell/Bash -->
+                  </li>
 
-                      <!-- Skill Task -->
-                      <li class="toctree-l2">
-                        <a
-                          class="reference internal"
-                          href="linux.html#SkillTask2"
-                          >Skill Task</a
-                        >
-                      </li>
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="linux.html#TerminalShellBash"
+                      >Terminal/Shell/Bash</a
+                    >
+                  </li>
+                  <!-- Syntax of Shell Command -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="linux.html#SyntaxofShellCommand"
+                      >Syntax of Shell Command</a
+                    >
+                  </li>
+                  <!-- TerminalC -->
+                  <li class="toctree-l2">
+                    <a class="reference internal" href="linux.html#TerminalC"
+                      >Terminal Commands</a
+                    >
+                  </li>
 
-                      <!-- Move (mv) and Remove (rm) Commands -->
-                      <li class="toctree-l2">
-                        <a
-                          class="reference internal"
-                          href="linux.html#MoveRemoveCommands"
-                          >Move (mv) and Remove (rm) Commands</a
-                        >
-                      </li>
+                  <!-- Skill Task -->
+                  <li class="toctree-l2">
+                    <a class="reference internal" href="linux.html#SkillTask"
+                      >Skill Task</a
+                    >
+                  </li>
 
-                      <!-- Change Mode : chmod -->
-                      <li class="toctree-l2">
-                        <a
-                          class="reference internal"
-                          href="linux.html#chmod"
-                          >Change Mode : chmod</a
-                        >
-                      </li>
+                  <!-- Copy (cp) Command -->
+                  <li class="toctree-l2">
+                    <a class="reference internal" href="linux.html#CopyCommand"
+                      >Copy (cp) Command</a
+                    >
+                  </li>
 
-                      <!-- Redirection Operators (> and >>) -->
-                      <li class="toctree-l2">
-                        <a
-                          class="reference internal"
-                          href="linux.html#RedirectionOperators"
-                          >Redirection Operators (> and >>)</a
-                        >
-                      </li>
+                  <!-- Skill Task -->
+                  <li class="toctree-l2">
+                    <a class="reference internal" href="linux.html#SkillTask2"
+                      >Skill Task</a
+                    >
+                  </li>
 
-                      <!-- Terminal Commands -->
-                      <li class="toctree-l2">
-                        <a
-                          class="reference internal"
-                          href="linux.html#TerminalCommands4"
-                          >Terminal Commands</a
-                        >
-                      </li>
+                  <!-- Move (mv) and Remove (rm) Commands -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="linux.html#MoveRemoveCommands"
+                      >Move (mv) and Remove (rm) Commands</a
+                    >
+                  </li>
 
-                      <!-- Command : pipe (|), grep, printenv, &&, || -->
-                      <li class="toctree-l2">
-                        <a
-                          class="reference internal"
-                          href="linux.html#Commandpipegrepprintenv"
-                          >Command : pipe (|), grep, printenv, &&, ||</a
-                        >
-                      </li>
+                  <!-- Change Mode : chmod -->
+                  <li class="toctree-l2">
+                    <a class="reference internal" href="linux.html#chmod"
+                      >Change Mode : chmod</a
+                    >
+                  </li>
 
-                      <!-- Command -->
-                      <li class="toctree-l2">
-                        <a
-                          class="reference internal"
-                          href="linux.html#Command"
-                          >Command</a
-                        >
-                      </li>
+                  <!-- Redirection Operators (> and >>) -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="linux.html#RedirectionOperators"
+                      >Redirection Operators (> and >>)</a
+                    >
+                  </li>
 
-                      <!-- Virtual Environment -->
-                      <li class="toctree-l2">
-                        <a
-                          class="reference internal"
-                          href="linux.html#VirtualEnvironment"
-                          >Virtual Environment</a
-                        >
-                      </li>
+                  <!-- Terminal Commands -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="linux.html#TerminalCommands4"
+                      >Terminal Commands</a
+                    >
+                  </li>
 
-                      <!-- Quoting -->
-                      <li class="toctree-l2">
-                        <a
-                          class="reference internal"
-                          href="linux.html#Quoting"
-                          >Quoting</a
-                        >
-                      </li>
+                  <!-- Command : pipe (|), grep, printenv, &&, || -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="linux.html#Commandpipegrepprintenv"
+                      >Command : pipe (|), grep, printenv, &&, ||</a
+                    >
+                  </li>
 
-                      <!-- Secure Shell (ssh) -->
-                      <li class="toctree-l2">
-                        <a
-                          class="reference internal"
-                          href="linux.html#SecureShell"
-                          >Secure Shell (ssh)</a
-                        >
-                      </li>
+                  <!-- Command -->
+                  <li class="toctree-l2">
+                    <a class="reference internal" href="linux.html#Command"
+                      >Command</a
+                    >
+                  </li>
+
+                  <!-- Virtual Environment -->
+                  <li class="toctree-l2">
+                    <a
+                      class="reference internal"
+                      href="linux.html#VirtualEnvironment"
+                      >Virtual Environment</a
+                    >
+                  </li>
+
+                  <!-- Quoting -->
+                  <li class="toctree-l2">
+                    <a class="reference internal" href="linux.html#Quoting"
+                      >Quoting</a
+                    >
+                  </li>
+
+                  <!-- Secure Shell (ssh) -->
+                  <li class="toctree-l2">
+                    <a class="reference internal" href="linux.html#SecureShell"
+                      >Secure Shell (ssh)</a
+                    >
                   </li>
                 </ul>
               </li>
@@ -585,6 +566,7 @@
                   <img
                     src="../img/ROS2.png"
                     alt="ROS (Robot Operating System)"
+                    class="img-width-600px"
                   />
                   <!-- Robots -->
                   <section id="Robots">
@@ -627,64 +609,77 @@
                       Robot is a machine but all machines are not robots as it
                       should possess certain anthropomorphic characteristics.
                     </p>
-                    <!-- Sensing -->
-                    <h3>Sensing</h3>
-                    <ul class="simple">
-                      <li>
-                        <p>Light Sensor - Eyes</p>
-                      </li>
-                      <li>
-                        <p>Touch Sensor - Hand</p>
-                      </li>
-                      <li>
-                        <p>Chemical Sensor - Nose</p>
-                      </li>
-                      <li>
-                        <p>Sonar Sensor - Ear</p>
-                      </li>
-                      <li>
-                        <p>Taste Sensor - Tongue</p>
-                      </li>
-                    </ul>
-                    <!-- Movement -->
-                    <h3>Movement</h3>
-                    <ul>
-                      <li>
-                        <p>Rolling Wheel</p>
-                      </li>
-                      <li>
-                        <p>Walking Leg</p>
-                      </li>
-                      <li>
-                        <p>Propelling action</p>
-                      </li>
-                    </ul>
-                    <!-- Energy -->
-                    <h3>Energy</h3>
-                    <ul>
-                      <li>
-                        <p>Solar</p>
-                      </li>
-                      <li>
-                        <p>Electric</p>
-                      </li>
-                      <li>
-                        <p>Battery</p>
-                      </li>
-                    </ul>
-                    <!-- Intelligence -->
-                    <h3>Intelligence</h3>
-                    <ul>
-                      <li>
-                        <p>AI</p>
-                      </li>
-                      <li>
-                        <p>Software</p>
-                      </li>
-                      <li>
-                        <p>Control</p>
-                      </li>
-                    </ul>
+                    <div class="display-flex">
+                      <div>
+                        <!-- Sensing -->
+                        <h3>Sensing</h3>
+                        <ul class="simple">
+                          <li>
+                            <p>Light Sensor - Eyes</p>
+                          </li>
+                          <li>
+                            <p>Touch Sensor - Hand</p>
+                          </li>
+                          <li>
+                            <p>Chemical Sensor - Nose</p>
+                          </li>
+                          <li>
+                            <p>Sonar Sensor - Ear</p>
+                          </li>
+                          <li>
+                            <p>Taste Sensor - Tongue</p>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <!-- Movement -->
+                        <h3>Movement</h3>
+                        <ul>
+                          <li>
+                            <p>Rolling Wheel</p>
+                          </li>
+                          <li>
+                            <p>Walking Leg</p>
+                          </li>
+                          <li>
+                            <p>Propelling action</p>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <!-- Energy -->
+                        <h3>Energy</h3>
+                        <ul>
+                          <li>
+                            <p>Solar</p>
+                          </li>
+                          <li>
+                            <p>Electric</p>
+                          </li>
+                          <li>
+                            <p>Battery</p>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <!-- Intelligence -->
+                        <h3>Intelligence</h3>
+                        <ul>
+                          <li>
+                            <p>AI</p>
+                          </li>
+                          <li>
+                            <p>Software</p>
+                          </li>
+                          <li>
+                            <p>Control</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </section>
                   <!-- Major Components of Robot -->
                   <section id="MajorComponentsofRobot">
@@ -697,7 +692,7 @@
                       >
                     </h2>
                     <h3>Sensors:</h3>
-                    <img src="../img/Robot1.jpg" alt="Sensors Robot" />
+                    <!-- <img src="../img/Robot1.jpg" alt="Sensors Robot" /> -->
                     <p>
                       Sensors are used to collect information about the internal
                       state of the robot or to communicate with the outside
@@ -707,14 +702,14 @@
                       environment.
                     </p>
                     <h3>Actuators:</h3>
-                    <img src="../img/Robot2.jpg" alt="Actuators Robot" />
+                    <!-- <img src="../img/Robot2.jpg" alt="Actuators Robot" /> -->
                     <p>
                       Actuators are the muscles of the manipulators. Common
                       types of actuators are servomotors, stepper motors,
                       pneumatic cylinders etc.
                     </p>
                     <h3>Controller:</h3>
-                    <img src="../img/Robot3.jpg" alt="Controller Robot" />
+                    <!-- <img src="../img/Robot3.jpg" alt="Controller Robot" /> -->
                     <p>
                       The controller receives data from the computer, controls
                       the motions of the actuator and coordinates these motions
@@ -731,10 +726,7 @@
                         ></a
                       >
                     </h2>
-                    <img
-                      src="../img/MultidisciplinaryKnowledge.jpg"
-                      alt="Multidisciplinary Knowledge"
-                    />
+                    <!-- <img src="../img/MultidisciplinaryKnowledge.jpg" alt="Multidisciplinary Knowledge" /> -->
                     <h3>Modeling:</h3>
                     <p>
                       Understanding the physical principles behind the flight
@@ -767,24 +759,19 @@
                     <img
                       src="../img/AutonomousRobots3.jpg"
                       alt="Autonomous Robots 3"
+                      class="img-width-600px"
                     />
                     <p>
                       Autonomous Robot has ability to move from its location to
                       goal location using sensor information.
                     </p>
-                    <img
-                      src="../img/AutonomousRobots1.jpg"
-                      alt="Autonomous Robots 1"
-                    />
+                    <!-- <img src="../img/AutonomousRobots1.jpg" alt="Autonomous Robots 1" /> -->
                     <p>
                       The robot localizes using sensor data and updating its
                       <span style="color: red">belief state</span> with respect
                       to the environment map.
                     </p>
-                    <img
-                      src="../img/AutonomousRobots2.jpg"
-                      alt="Autonomous Robots 2"
-                    />
+                    <!-- <img src="../img/AutonomousRobots2.jpg" alt="Autonomous Robots 2" /> -->
                   </section>
                   <!-- Why ROS -->
                   <section id="WhyROS">
@@ -796,7 +783,7 @@
                         ></a
                       >
                     </h2>
-                    <img src="../img/WhyROS.jpg" alt="WhyROS" />
+                    <img src="../img/WhyROS.jpg" alt="WhyROS" class="img-width-600px"/>
                     <p>Start building software that is already exists:</p>
                     <ul>
                       <li>Lack of standards</li>
@@ -878,6 +865,7 @@
                     <img
                       src="../img/RobotIntegrationCapabilities.png"
                       alt="RobotIntegrationCapabilities"
+                      class="img-width-600px"
                     />
                     <ul>
                       <li>Free & open source, community-based, repositories</li>
@@ -921,6 +909,7 @@
                     <img
                       src="../img/CurrentlySupportedDistributions.png"
                       alt="Currently Supported Distributions"
+                      class="img-width-600px"
                     />
                     <p>
                       <a href="http://docs.ros.org/en/rolling/Releases.html"
@@ -976,6 +965,7 @@
                     <img
                       src="../img/ROSApplications.jpg"
                       alt="ROS Applications"
+                      class="img-width-600px"
                     />
                     <ul>
                       <li>
@@ -1025,26 +1015,7 @@
                     <img
                       src="../img/ROS2ConceptsToolsandTechnologies.jpg"
                       alt="ROS2ConceptsToolsandTechnologies"
-                    />
-                  </section>
-                  <!-- Current Distributions -->
-                  <section id="CurrentDistributions">
-                    <h2>
-                      Current Distributions<a
-                        class="headerlink"
-                        href="#CurrentDistributions"
-                        title="Link to this heading"
-                        ></a
-                      >
-                    </h2>
-                    <p>
-                      <a href="http://docs.ros.org/en/rolling/Releases.html"
-                        >http://docs.ros.org/en/rolling/Releases.html</a
-                      >
-                    </p>
-                    <img
-                      src="../img/CurrentDistributions.png"
-                      alt="Current Distributions"
+                      class="img-width-600px"
                     />
                   </section>
                   <!-- Thank You -->

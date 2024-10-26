@@ -20,6 +20,8 @@
     <link rel="stylesheet" type="text/css" href="../css/graphviz.css" />
     <link rel="stylesheet" type="text/css" href="../css/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../css/tabs.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/custom.css" />
     <link rel="shortcut icon" href="../img/ROS.png" />
     <script src="../js/jquery.js"></script>
     <script src="../js/_sphinx_javascript_frameworks_compat.js"></script>
@@ -182,14 +184,6 @@
                           class="reference internal"
                           href="introduction.html#ROS2ConceptsToolsandTechnologies"
                           >ROS2 Concepts, Tools and Technologies</a
-                        >
-                      </li>
-                      <!-- Current Distributions -->
-                      <li class="toctree-l3">
-                        <a
-                          class="reference internal"
-                          href="introduction.html#CurrentDistributions"
-                          >Current Distributions</a
                         >
                       </li>
                     </ul>
@@ -580,6 +574,7 @@
                   <img
                     src="../img/ROS2.png"
                     alt="ROS (Robot Operating System)"
+                    class="img-width-600px"
                   />
                   <!-- Docs : Installation Guide -->
                   <section id="DocsInstallationGuide">
@@ -594,6 +589,7 @@
                     <img
                       src="../img/DocsInstallationGuide.png"
                       alt="DocsInstallationGuide"
+                      class="img-width-600px"
                     />
                     <p>
                       <a href="https://docs.ros.org/en/humble/Installation.html"
@@ -611,7 +607,7 @@
                         ></a
                       >
                     </h2>
-                    <img src="../img/Ubuntu.jpg" alt="Ubuntu" />
+                    <!-- <img src="../img/Ubuntu.jpg" alt="Ubuntu" /> -->
                     <p>
                       Ubuntu is a popular distribution (or "distro") of Linux
                     </p>
@@ -648,20 +644,20 @@
                         ></a
                       >
                     </h2>
-                    <img src="../img/Download.png" alt="Download" />
+                    <img src="../img/Download.png" alt="Download" class="img-width-600px"/>
                     <p>
                       <a href="https://releases.ubuntu.com/"
                         >https://releases.ubuntu.com/</a
                       >
                     </p>
-                    <img src="../img/Download2.png" alt="Download2" />
+                    <img src="../img/Download2.png" alt="Download2" class="img-width-600px"/>
                     <p>
                       <a
                         href="https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview"
                         >https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview</a
                       >
                     </p>
-                    <img src="../img/Download3.png" alt="Download3" />
+                    <img src="../img/Download3.png" alt="Download3" class="img-width-600px"/>
                   </section>
                   <!-- Bootable Drive -->
                   <section id="BootableDrive">
@@ -673,12 +669,15 @@
                         ></a
                       >
                     </h2>
-                    <img src="../img/BootableDrive.png" alt="BootableDrive" />
-                    <img src="../img/BootableDrive2.png" alt="BootableDrive2" />
-                    <img src="../img/BootableDrive3.png" alt="BootableDrive3" />
-                    <img src="../img/BootableDrive4.png" alt="BootableDrive4" />
-                    <img src="../img/BootableDrive5.png" alt="BootableDrive5" />
-                    <img src="../img/BootableDrive6.png" alt="BootableDrive6" />
+                    <img src="../img/BootableDrive.png" alt="BootableDrive" class="img-width-600px"/>
+                    <br>
+                    <div class="display-flex">
+                      <img src="../img/BootableDrive2.png" alt="BootableDrive2" />
+                      <img src="../img/BootableDrive3.png" alt="BootableDrive3" />
+                      <img src="../img/BootableDrive4.png" alt="BootableDrive4" />
+                      <img src="../img/BootableDrive5.png" alt="BootableDrive5" />
+                      <img src="../img/BootableDrive6.png" alt="BootableDrive6" />
+                    </div>
                   </section>
                   <!-- Creating Virtual Machine -->
                   <section id="CreatingVirtualMachine">
@@ -693,20 +692,23 @@
                     <img
                       src="../img/CreatingVirtualMachine.jpg"
                       alt="CreatingVirtualMachine"
+                      class="img-width-600px"
                     />
                     <p>
                       <a href="https://www.virtualbox.org/"
                         >https://www.virtualbox.org/</a
                       >
                     </p>
-                    <img src="../img/virtualbox.png" alt="virtualbox" />
+                    <img src="../img/virtualbox.png" alt="virtualbox" class="img-width-600px"/>
                     <img
                       src="../img/CreatingVirtualMachine2.png"
                       alt="CreatingVirtualMachine"
+                      class="img-width-600px"
                     />
                     <img
                       src="../img/CreatingVirtualMachine3.png"
                       alt="CreatingVirtualMachine"
+                      class="img-width-600px"
                     />
                     <p>
                       <strong>Name:</strong> Assign an informative name that
@@ -735,6 +737,7 @@
                     <img
                       src="../img/CreatingVirtualMachine4.png"
                       alt="CreatingVirtualMachine4"
+                      class="img-width-600px"
                     />
                     <p>
                       <strong>Base Memory:</strong> The amount of memory
@@ -755,6 +758,7 @@
                     <img
                       src="../img/CreatingVirtualMachine5.png"
                       alt="CreatingVirtualMachine5"
+                      class="img-width-600px"
                     />
                     <p>
                       <strong>Disk Size:</strong> maximum size for the hard disk
@@ -779,10 +783,12 @@
                     <img
                       src="../img/CreatingVirtualMachine6.png"
                       alt="CreatingVirtualMachine6"
+                      class="img-width-600px"
                     />
                     <img
                       src="../img/CreatingVirtualMachine7.png"
                       alt="CreatingVirtualMachine7"
+                      class="img-width-600px"
                     />
                     <p>
                       <strong>Save the machine state:</strong> VirtualBox
@@ -842,16 +848,18 @@
                       framework that allows kernel modules to be dynamically
                       built for each kernel version installed on a system.
                     </p>
-                    <img src="../img/UbuntuDebian.png" alt="Ubuntu (Debian)" />
-                    <img src="../img/Setupsources.png" alt="Setup Sources" />
+                    <img src="../img/UbuntuDebian.png" alt="Ubuntu (Debian)" class="img-width-600px"/>
+                    <img src="../img/Setupsources.png" alt="Setup Sources" class="img-width-600px"/>
                     <img
                       src="../img/InstallROS2Packages.png"
                       alt="Install ROS2 Packages"
+                      class="img-width-600px"
                     />
                     <p>
                       <img
                         src="../img/DesktopInstall.png"
                         alt="Desktop Install"
+                        class="img-width-600px"
                       />
                     </p>
                   </section>
