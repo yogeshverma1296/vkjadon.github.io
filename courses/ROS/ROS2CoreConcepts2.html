@@ -246,7 +246,9 @@
 
               <!-- ROS2 Installation Using Docker -->
               <li class="toctree-l1">
-                <a class="reference internal" href="ROS2InstallationDocker.html">ROS2 Installation Docker</a>
+                <a class="reference internal" href="ROS2InstallationDocker.html"
+                  >ROS2 Installation Docker</a
+                >
                 <ul>
                   <!-- Docker and Container -->
                   <li class="toctree-l2">
@@ -582,200 +584,270 @@
               itemtype="http://schema.org/Article"
             >
               <section itemprop="articleBody">
-                <!-- ROS2 Installation Using Docker (Docker and Container) -->
-                <section id="ROS2InstallationDocker">
+                <section id="ROS2CoreConceptsPart2">
                   <span id="id1"></span>
+                  <!-- ROS2 Core Concepts Part-2 -->
                   <h1>
-                    ROS2 Installation Using Docker (Docker and Container)<a
+                    ROS2 Core Concepts Part-2 [Creating Python Node with Package
+                    Create]<a
                       class="headerlink"
-                      href="#ROS2InstallationDocker"
+                      href="#ROS2CoreConceptsPart2"
                       title="Link to this heading"
                       ></a
                     >
                   </h1>
-                </section>
-                <!-- Docker and Container -->
-                <section id="DockerandContainer">
-                  <h2>
-                    Docker and Container
-                    <a
-                      class="headerlink"
-                      href="#DockerandContainer"
-                      title="Link to this heading"
-                      ></a
-                    >
-                  </h2>
-                  <p>
-                    <strong>Docker</strong> is a platform that enables
-                    developers to create, deploy, and run applications inside
-                    lightweight containers.
-                  </p>
-                  <p>
-                    <strong>Containers</strong> package an application and its
-                    dependencies together, ensuring consistency across different
-                    environments.
-                  </p>
-                  <p>
-                    Unlike virtual machines, containers share the host system's
-                    kernel, making them more efficient and quicker to start up.
-                  </p>
-                </section>
-
-                <!-- Setting-Up Docker and Container -->
-                <section id="SettingUpDockerandContainer">
-                  <h2>
-                    Setting-Up Docker and Container<a
-                      class="headerlink"
-                      href="#SettingUpDockerandContainer"
-                      title="Link to this heading"
-                      ></a
-                    >
-                  </h2>
-                  <!-- SettingUpDockerandContainer1 -->
-                  <p>
-                    <img
-                      src="img/SettingUpDockerandContainer1.png"
-                      alt="Setting Up Docker and Container 1"
-                      class="img-width-600px"
-                    />
-                  </p>
-                  <!-- SettingUpDockerandContainer2 -->
-                  <p>
-                    <img
-                      src="img/SettingUpDockerandContainer2.png"
-                      alt="Setting Up Docker and Container 2"
-                      class="img-width-600px"
-                    />
-                  </p>
-                  <!-- SettingUpDockerandContainer3 -->
-                  <p>
-                    <img
-                      src="img/SettingUpDockerandContainer3.png"
-                      alt="Setting Up Docker and Container 3"
-                      class="img-width-600px"
-                    />
-                  </p>
-                  <!-- SettingUpDockerandContainer4 -->
-                  <p>
-                    <img
-                      src="img/SettingUpDockerandContainer4.png"
-                      alt="Setting Up Docker and Container 4"
-                      class="img-width-600px"
-                    />
-                  </p>
-                  <!-- SettingUpDockerandContainer5 -->
-                  <p>
-                    <img
-                      src="img/SettingUpDockerandContainer5.png"
-                      alt="Setting Up Docker and Container 5"
-                      class="img-width-600px"
-                    />
-                  </p>
-                </section>
-
-                <!-- Setting-Up Docker for ROS -->
-                <section id="SettingUpDockerforROS">
-                  <h2>
-                    Setting-Up Docker for ROS<a
-                      class="headerlink"
-                      href="#SettingUpDockerforROS"
-                      title="Link to this heading"
-                      ></a
-                    >
-                  </h2>
-                  <!-- SettingUpDockerforROS1 -->
-                  <p>
-                    <img
-                      src="img/SettingUpDockerforROS1.png"
-                      alt="Setting Up Docker for ROS 1"
-                      class="img-width-600px"
-                    />
-                  </p>
-                  <!-- SettingUpDockerforROS2 -->
-                  <p>
-                    <img
-                      src="img/SettingUpDockerforROS2.png"
-                      alt="Setting Up Docker for ROS 2"
-                      class="img-width-600px"
-                    />
-                    <a
-                      href="https://github.com/osrf/docker_images?tab=readme-ov-file"
-                      class="txt-underline margin-top-10px"
-                      >https://github.com/osrf/docker_images?tab=readme-ov-file</a
-                    >
-                  </p>
-                  <!-- SettingUpDockerforROS3 -->
-                  <p>
-                    <img
-                      src="img/SettingUpDockerforROS3.png"
-                      alt="Setting Up Docker for ROS 3"
-                      class="img-width-600px"
-                    />
-                    <a
-                      href="https://hub.docker.com/r/osrf/ros/tags"
-                      class="txt-underline margin-top-10px"
-                      >https://hub.docker.com/r/osrf/ros/tags</a
-                    >
-                  </p>
-
-                  <pre><code class="language-bash">% docker pull osrf/ros:&lt;tag_name&gt;</code></pre>
-                  <pre><code class="language-bash">% docker pull osrf/ros:humble-desktop</code></pre>
-
-                  <img src="img/dockerpull.png" alt="docker pull" class="img-width-600px" />
-
-                  <h4>List images in the Docker</h4>
-                  <pre><code class="language-bash">% docker images</code></pre>
-
-                  <h4>Run image in a container</h4>
-                  <pre><code class="language-bash">% docker run -it osrf/ros:humble-desktop</code></pre>
-                  <pre><code class="language-bash">$ apt-get update</code></pre>
-                  <pre><code class="language-bash">$ lsb_release -a</code></pre>
-
                   <img
-                    src="img/Runimageinacontainer.png"
-                    alt="Run image in a container"
+                    src="../img/ROS2.png"
+                    alt="ROS (Robot Operating System)"
                     class="img-width-600px"
                   />
-
-                  <h4>Check the container running</h4>
-                  <pre><code class="language-bash">% docker ps</code></pre>
-
-                  <h4>
-                    We can use 'docker exec' command to connect to a running
-                    container in another terminal
-                  </h4>
-                  <pre><code class="language-bash">% docker exec -it &lt;id&gt; bash</code></pre>
-
                   <p>
-                    <span class="border-2px-solid-red" style="padding: 5px"
-                      >Source ros2 environment and use it</span
-                    >
-                    Source /opt/ros/humble/setup.bash
+                    We can also create a package with a sample node using the
+                    <span class="font-bold color-red">--node-name</span> option
                   </p>
-
-                  <h4>We can add the source command in root/.bashrc</h4>
-                  <img
-                    src="img/Addthesourcecommandinroot.png"
-                    alt="Add the source command in root"
-                    class="img-width-600px"
-                  />
-
-                  <pre><code class="language-bash">$ docker run -it -v $PWD/source:destination &lt;id&gt;</code></pre>
-
-                  <img
-                    src="img/Addthesourcecommandinroot2.png"
-                    alt="Add the source command in root 2"
-                    class="img-width-600px"
-                  />
-
-                  <pre><code class="language-bash">$ docker run -it -v $PWD/source:destination --name &lt;name&gt; &lt;id&gt;</code></pre>
+                  <pre class="language-bash"><code>~/ros2_ws/src $ ros2 pkg create --build-type ament_python --node-name sample_node test_pkg_with_node</code></pre>
+                  <p>Check the <span class="color-blue font-bold">setup.py</span> and note the entry points is already populated with a executable name as Remove this package by removing the directory. We will add some more options before executing the sample node.</p>
+                  <pre class="language-bash"><code>~/ros2_ws/src $ rm -rf test_pkg_with_node</code></pre>
+                  <p>Add the dependencies of "<span class="font-bold">rclpy</span>" and "<span class="font-bold">std_msgs</span>". We are assuming these modules are required in addition to standard python packages to run the node.</p>
+                  <pre class="language-bash"><code>~/ros2_ws/src $ ros2 pkg create --build-type ament_python --dependencies rclpy std_msgs --node-name sample_node test_pkg_with_node</code></pre>
+                  <p>Check the <span class="color-blue font-bold">setup.py</span> and <span class="color-blue font-bold">package.xml</span>. <span class="color-red font-bold italic">Build and run the node</span></p>
+                  <pre class="language-bash"><code>~/ros2_ws $ colcon build --packages-select test_pkg_with_node</code></pre>
+                  <pre class="language-bash"><code>~/ros2_ws $ ros2 run test_pkg_with_node sample_node</code></pre>
+                  <p class="border-2px-solid-red"><span class="italic">Do not forget to source the <span class="color-blue">setup.bash</span> or <span class="color-blue">local_setup.bash</span></span> before executing the node</p>
+                  <h2>Quick Concepts</h2>
+                  <p>Always create package in the <span class="color-blue font-bold">src</span> folder.</p>
+                  <p>Always build a package in the <span class="color-blue font-bold">Workspace (ros2_ws)</span> folder.</p>
+                  <p>Add entry points in <span class="color-blue font-bold">setup.py</span> and dependencies in <span class="color-blue font-bold">package.xml</span> after adding any node in the package.</p>
+                  <p>Always build after making any change in the files of the package. No need, if you use <span class="color-blue font-bold">--symlink-install</span></p>
+                    <p>Source <span class="color-blue font-bold">setup.bash</span> or <span class="color-blue font-bold">local_setup.bash</span> after you build a package.</p> 
                 </section>
+
+                <!-- Sample Node Publisher - Subscriber -->
+                <section id="SampleNodePublisherSubscriber">
+                    <h2>Sample Node Publisher - Subscriber<a
+                        class="headerlink"
+                        href="#SampleNodePublisherSubscriber"
+                        title="Link to this heading"
+                        ></a>
+                    </h2>
+                    <p><a href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html" class="txt-underline">https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html</a></p>
+                    <pre class="language-python"><code>import rclpy
+from rclpy.node import Node
+
+from std_msgs.msg import String
+
+class MinimalPublisher(Node):</code></pre>
+                    <p>Copy in <span class="color-blue font-bold">ros2_ws/src/test_pkg/test_pkg</span> as <span class="color-blue font-bold">test_publisher.py</span></p>
+
+                    <pre class="language-python"><code>import rclpy
+from rclpy.node import Node
+                        
+from std_msgs.msg import String
+                        
+class MinimalSubscriber(Node):</code></pre>
+                    <p>Copy in <span class="color-blue font-bold">ros2_ws/src/test_pkg/test_pkg</span> as <span class="color-blue font-bold">test_subscriber.py</span></p>
+
+                    <pre class="language-bash"><code>~/ros2_ws $ cd src/test_pkg/test_pkg</code></pre>
+                    <pre class="language-bash"><code>/test_pkg$ wget https://raw.githubusercontent.com/vkjadon/ros2/master/test_publisher.py</code></pre>
+                </section>
+
+                <section id="SamplePublisherNodeScript">
+                    <h2>Sample Publisher Node Script<a
+                        class="headerlink"
+                        href="#SamplePublisherNodeScript"
+                        title="Link to this heading"
+                        ></a>
+                    </h2>
+                    <pre class="language-python"><code>import sys
+
+import rclpy
+from rclpy.executors import ExternalShutdownException
+from rclpy.node import Node
+
+from std_msgs.msg import String
+
+class MinimalPublisher(Node):
+
+    def __init__(self):
+        super().__init__('pubroot')
+        self.publisher_ = self.create_publisher(String, 'topic', 10)
+        timer_period = 0.5  # seconds
+        self.timer = self.create_timer(timer_period, self.timer_callback)
+        self.i = 0
+
+    def timer_callback(self):
+        msg = String()
+        msg.data = 'Hello World: %d' % self.i
+        self.publisher_.publish(msg)
+        self.get_logger().info('Publishing: "%s"' % msg.data)
+        self.i += 1
+
+def main(args=None):
+    rclpy.init()
+
+    try:
+        minimal_publisher = MinimalPublisher()
+
+        rclpy.spin(minimal_publisher)
+    except KeyboardInterrupt:
+        pass
+    except ExternalShutdownException:
+        sys.exit(1)
+
+if __name__ == '__main__':
+    main()
+                    </code></pre>
+                    <p>Github Repository Link of <span class="color-blue font-bold">test_pkg</span> : <a href="https://github.com/vkjadon/test_pkg" class="txt-underline">https://github.com/vkjadon/test_pkg</a></p>
+                    <p>Raw Link of <span class="color-blue font-bold">test_publisher.py</span> : <a href="https://raw.githubusercontent.com/vkjadon/test_pkg/refs/heads/main/test_pkg/test_publisher.py" class="txt-underline">https://raw.githubusercontent.com/vkjadon/test_pkg/refs/heads/main/test_pkg/test_publisher.py</a></p>
+                    <a href="https://github.com/ros2/examples/tree/rolling/rclpy/topics" class="txt-underline">https://github.com/ros2/examples/tree/rolling/rclpy/topics</a>
+                    <p><span class="color-red font-bold">rclpy</span> is a Python client library for ROS 2 (Robot Operating System 2) that provides a Python interface to the underlying ROS 2 middleware.</p>
+                    <a href="https://docs.ros2.org/foxy/api/rclpy/index.html" class="txt-underline">https://docs.ros2.org/foxy/api/rclpy/index.html</a>
+                </section>
+
+
+                <section id="ROS2ProgramStructure">
+                    <h2>ROS2 Program Structure<a
+                        class="headerlink"
+                        href="#ROS2ProgramStructure"
+                        title="Link to this heading"
+                        ></a>
+                    </h2>
+                    <p><a href="https://github.com/ros2/examples/tree/rolling/rclpy/topics" class="txt-underline">https://github.com/ros2/examples/tree/rolling/rclpy/topics</a></p>
+                    <h3>Import Section</h3>
+                    <p>There are two dependencies: 1. <span class="color-blue font-bold">rclpy</span> and 2. <span class="color-blue font-bold">std_msgs</span></p>
+                    <pre class="language-python"><code>import sys
+
+import rclpy
+from rclpy.executors import ExternalShutdownException
+from rclpy.node import Node
+                        
+from std_msgs.msg import String</code></pre>
+                    <h3>Main Method</h3>
+                    <p>A typical ROS program consists of the following operations :</p>
+                    <ul>
+                        <li><span class="color-red font-bold">Initialization</span>: Initialization is done by calling <span class="color-blue italic font-bold txt-underline">init()</span>. This is done before any ROS nodes is created.</li>
+                        <li><span class="color-red font-bold">Create ROS nodes</span>: Creating a ROS node by calling <span class="color-blue italic font-bold txt-underline">create_node()</span> or by instantiating a <span class="color-blue italic font-bold txt-underline">Node</span>. It creates publishers, subscriptions, services, and actions etc.</li>
+                        <li><span class="color-red font-bold">Process node callbacks</span>: The <span class="color-blue italic font-bold txt-underline">spin()</span> start this loop, and blocks the program execution until a shutdown signal is received.</li>
+                        <li><span class="color-red font-bold">Shutdown</span>: Shutdown a previously initialized context. This will also shutdown the global executor.</li>
+                    </ul>
+                    <pre class="language-python"><code>def main(args=None):
+    rclpy.init(args=args)
+                        
+    try:
+        minimal_publisher = MinimalPublisher()
+                        
+        rclpy.spin(minimal_publisher)
+    except KeyboardInterrupt:
+        pass
+    except ExternalShutdownException:
+        sys.exit(1)</code></pre>
+                    <h3>Node Class</h3>
+                    <p>A node class consists of a constructor and a callback function.</p>
+                    <div class="display-flex">
+                        <ul><span class="font-bold color-red">Constructor</span>
+                            <li>Creating a publisher</li>
+                            <li>Timer</li>
+                        </ul>
+                        <ul><span class="font-bold color-red">Callback function</span>
+                            <li>Processing</li>
+                        </ul>
+                    </div>
+                    <a href="https://github.com/ros2/examples/tree/rolling/rclpy/topics" class="txt-underline">https://github.com/ros2/examples/tree/rolling/rclpy/topics</a>
+                    <p>Raw Link: <a href="https://raw.githubusercontent.com/vkjadon/test_pkg/refs/heads/main/test_pkg/test_publisher.py" class="txt-underline">https://raw.githubusercontent.com/vkjadon/test_pkg/refs/heads/main/test_pkg/test_publisher.py</a></p>
+                    <pre class="language-python"><code>class MinimalPublisher(Node):
+
+    def __init__(self):
+        super().__init__('pubroot')
+        self.publisher_ = self.create_publisher(String, 'topic', 10)
+        timer_period = 0.5  # seconds
+        self.timer = self.create_timer(timer_period, self.timer_callback)
+        self.i = 0
+                    
+    def timer_callback(self):
+        msg = String()
+        msg.data = 'Hello World: %d' % self.i
+        self.publisher_.publish(msg)
+        self.get_logger().info('Publishing: "%s"' % msg.data)
+        self.i += 1</code></pre>
+                </section>
+
+                <section id="ExecutingSamplePublisherNode">
+                    <h2>Executing Sample Publisher Node<a
+                        class="headerlink"
+                        href="#ExecutingSamplePublisherNode"
+                        title="Link to this heading"
+                        ></a>
+                    </h2>
+                    <p>Go to <span class="color-blue font-bold">test_pkg</span></p>
+                    <pre class="language-bash"><code>~ $ cd ros2_ws/src/test_pkg/test_pkg</code></pre>
+                    <p>Download <span class="color-blue font-bold">test_publisher.py</span> into <span class="color-blue font-bold">test_pkg</span></p>
+                    <pre class="language-bash"><code>/test_pkg$ wget https://raw.githubusercontent.com/vkjadon/ros2/master/test_publisher.py</code></pre>
+                    <p>Ensure the <span class="color-blue font-bold">node_exe</span> node of <span class="color-blue font-bold">test_pkg</span> is running as usual</p>
+                    <pre class="language-bash"><code>~/ros2_ws $ ros2 run test_pkg node_exe</code></pre>
+                    <p>Update Entry Point for executing publisher node in <span class="color-blue font-bold">setup.py</span></p>
+<pre class="language-python"><code>pub_exe=test_pkg.test_publisher:main
+&lt;exec_depend&gt;rclpy&lt;/exec_depend&gt;
+&lt;exec_depend&gt;std_msgs&lt;/exec_depend&gt;
+</code></pre>
+                    <p>Update dependencies in <span class="color-blue font-bold">package.xml</span></p>
+                    <pre class="language-bash"><code>~/ros2_ws $ colcon build --packages-select test_pkg</code></pre>
+                    <pre class="language-bash"><code>~/ros2_ws $ ros2 run test_pkg pub_exe</code></pre>
+                    <p>Output:</p>
+                    <p>Hello World: 1</p>
+                    <p>Hello World: 2</p>
+                    <p class="border-2px-solid-red">Do not forget to source the <span class="color-blue font-bold">setup.bash</span> or <span class="color-blue font-bold">local_setup.bash</span> before executing the node</p>
+                </section>
+
+                <!-- Skill Task Left -->
+                <section id="SkillTask">
+                  <h2>Skill Task<a
+                    class="headerlink"
+                    href="#SkillTask"
+                    title="Link to this heading"
+                    ></a>
+                  </h2>
+                  <ol class="border-2px-solid-red">
+                    <li>Download Subscriber Node of file <span class="color-blue font-bold">test_subscriber.py</span> from <span class="color-blue font-bold">vkjadon/ros2</span> repository.</li>
+                    <li>Do the required changes.</li>
+                    <li>Build as a python package</li>
+                    <li>Execute the subscriber in another terminal.</li>
+                  </ol>
+                  <p>Time : 10 min</p>
+                  <h3>Skill Task : Solution</h3>
+                  <p>Update Entry Point for executing subscriber node in <span class="color-blue font-bold">setup.py</span></p>
+                  <p class="font-bold">sub_exe= test_pkg.test_subscriber:main</p>
+                  <p>Nothing to be updated in <span class="color-blue font-bold">package.xml</span></p>
+                  <pre class="language-bash"><code>~/ros2_ws $ colcon build --packages-select test_pkg</code></pre>
+                  <pre class="language-bash"><code>~/ros2_ws $ source install/setup.bash</code></pre>
+                  <pre class="language-bash"><code>~/ros2_ws $ ros2 run test_pkg sub_exe</code></pre>
+                  <p class="border-2px-solid-red">Most common error here is that you may have not added <span class="color-red">coma (,)</span> after the last <span class="color-red">entry point</span> before adding any more <span class="color-red">entry points</span>. Each entry point should be separated by a <span class="color-red">coma (,)</span></p>
+                  <h3>Localhost Only</h3>
+                  <p>Open terminator. Split into grid of Four terminals. In First terminal build the package.</p>
+                  <p>Terminal-2: Run <span class="color-blue font-bold">pub_exe</span></p>
+                  <pre class="language-bash"><code>~/ros2_ws $[2] ros2 run test_pkg pub_exe</code></pre>
+                  <p>Terminal-3: Run <span class="color-blue font-bold">sub_exe</span></p>
+                  <pre class="language-bash"><code>~/ros2_ws $[3] ros2 run test_pkg sub_exe</code></pre>
+                  <p class="border-2px-solid-red">Everyone is publishing on the same topic are on the same network. When everyone subscribe to same topic, will receive the information from all.</p>
+                  <pre class="language-bash"><code>~/ros2_ws $[4] printenv</code></pre>
+                  <pre class="language-bash"><code>~/ros2_ws $[4] printenv | grep ROS</code></pre>
+                  <pre class="language-bash"><code>~$ echo “export ROS_LOCALHOST_ONLY=1” >> ~/.bashrc</code></pre>
+                  <p class="border-2px-solid-red">Close all the terminals and reopen the terminator. Or, you can source <span class="color-blue font-bold">~/.bashrc</span> in every terminal. Run <span class="color-blue font-bold">pub_exe</span> and <span class="color-blue font-bold">sub_exe</span> in different terminals. This will restrict everyone to publish and subscribe to only local machine</p>
+
+                  <h3>Using Domain ID</h3>
+                  <pre class="language-bash"><code>~/ros2_ws $[4] printenv | grep ROS</code></pre>
+                  <p>Set <span class="color-blue font-bold">ROS_LOCALHOST_ONLY</span> back to <span class="color-blue font-bold">0</span> in <span class="color-blue font-bold">.bashrc</span>. Now set the <span class="color-blue font-bold">ROS_DOMAIN_ID</span>.Let us set ID 1 for row 1, 2 for row 2 and so on.</p>
+                  <pre class="language-bash"><code>~$ export ROS_DOMAIN_ID=1</code></pre>
+                  <p>Add <span class="color-blue font-bold">ROS_DOMAIN_ID</span> in <span class="color-blue font-bold">~/.bashrc</span> so that it is set for every terminal we open.</p>
+                  <pre class="language-bash"><code>~$ echo "export ROS_DOMAIN_ID=1" >> ~/.bashrc</code></pre>
+                  <p class="border-2px-solid-red">Close all the terminals and reopen the terminator. Or, you can source <span class="color-blue font-bold">~/.bashrc</span> in every terminal.</p>
+                  <pre class="language-bash"><code>~/ros2_ws $ printenv | grep ROS</code></pre>
+                  <p>Run <span class="color-blue font-bold">pub_exe</span> and <span class="color-blue font-bold">sub_exe</span> in different terminals</p>
+                  <p>This will restrict everyone to publish and subscribe to only machines with same <span class="color-blue font-bold">Domain_ID</span>.</p>
+                </section>
+
 
                 <!-- Thank You -->
-                <p>
-                  Thank You. End of ROS2 Installation Using Docker (Docker and
-                  Container).
-                </p>
+                <p>Thank You. End of ROS2 Core Concepts Part-2.</p>
               </section>
             </div>
             <footer>
@@ -785,7 +857,7 @@
                 aria-label="Footer"
               >
                 <a
-                  href="installation.html"
+                  href="linux.html"
                   class="btn btn-neutral float-left"
                   title="Introduction of ROS"
                   accesskey="p"
@@ -797,7 +869,7 @@
                   Previous</a
                 >
                 <a
-                  href="linux.html"
+                  href="#"
                   class="btn btn-neutral float-right"
                   title="Beginner: CLI tools"
                   accesskey="n"
